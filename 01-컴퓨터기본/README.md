@@ -144,13 +144,42 @@
 ### 1. Git을 사용하는데 필요한 프로그램 설치
 
 #### 1) 윈도우
-
+    git-scm 다운로드
 #### 2) 맥
+    응용 프로그램 > 유틸리티 > 터미널 실행 > xcode-select --install
+#### 3> Window, Mac 공통
+    git config --global user.name "Youer Name"
+    git config --global user.email "You@Your-domain.com"
+    git config --global core.precomposeunicode true
+    git config --global core.quotepath false
 
 ### 2. SSH-key 생성
+    터미널에 ssh-keygen 입력
+    나오는대로 입력하고 비밀번호는 엔터로 넘어갈 수 있다.
 
 ### 3. SSH-key를 git에 등록
+    id_rsa.pub 을 text 파일로 열거나 VScode 로 열어서 안의 내용을 복사 후,
+    github setting에 들어가 SSH and GPG key에 복사하여 등록한다.
 
 ### 4. 저장소 생성
+    + 버튼을 눌러 NEw repository를 클릭하거나,
+    홈페이지에서 Repositories 옆에 New 버튼을 눌러서 Repository name 을 입력하고 공개/비공개 설정후 생성하면 된다.
 
 ### 5. 저장소 클론
+    생성한 클론을 클릭하여 code 버튼을 누르면 Clone 창이 열린다. 
+    HTTPS, SSH, GitHub CLI 중 SSH 를 복사하여 터미널에 git clone 복사한 주소를 입력하면 된다.
+
+### 6. 내 컴퓨터에서 Git으로 보내기
+    내용을 변경하여 Git에 저장하고 싶다면
+    터미널에서 cd repository_name
+    git add --all 또는
+    입력 후
+    git commint -m "간단한 설명"
+    을 적은 후에 
+    git push origin branch_name 
+    을 입력하면 된다.
+
+### 7. Git에서 내 컴퓨터로 내려받기
+    Git에서 내 컴퓨터로 받고싶다면,
+    git pull origin branch_name
+    하면된다.
