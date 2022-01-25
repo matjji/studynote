@@ -5,8 +5,9 @@
 현재 갖고 있는 사과의 수를 의미하는 `numOfApples` 변수에 123이라는 값이 할당되어 있을 경우 필요한 바구니의 수를 구하는 프로그램을 구현하시오. */
 
 let numOfApples = 123;
+let bucket = (numOfApples - (numOfApples % 10)) /10;
 let extraBucket = numOfApples % 10 >= 1 ? 1 : 0;
-let totalBucket = parseInt(numOfApples / 10) + extraBucket
+let totalBucket = bucket + extraBucket
 console.log(totalBucket);
 
 
