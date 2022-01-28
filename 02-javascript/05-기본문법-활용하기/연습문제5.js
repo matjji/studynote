@@ -10,7 +10,13 @@ for문을 중첩하여 실행하여 아래와 같은 출력 결과를 만드시�
 ```
  */
 for (let i = 0; i<4; i++){
-    for (let j = i; j<i+1; j++){
-        console.log(j, j+1, j+2, j+3)
+    let str ="";
+
+    for (let j = 0; j<4; j++){
+        str += i+j;
+        if (j + 1 < 4){
+            str += " ";
+        }
     }
+    console.log(str);
 }
