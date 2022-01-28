@@ -13,6 +13,7 @@ if (item2 !== undefined){
     console.log("1번째 원소 존재하지 않음")
 }
 
+
 //비구조 문법으로 값 복사하기
 let [a,b] = myArr;
 console.log(a);

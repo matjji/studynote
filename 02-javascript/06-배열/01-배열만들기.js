@@ -1,4 +1,4 @@
-let myArr1 
+let myArr1;
 myArr1 = [1, 3.14, true, "hello"];
 console.log(myArr1);
 
