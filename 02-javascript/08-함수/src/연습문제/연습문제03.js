@@ -1,73 +1,4 @@
-# 함수 연습문제
-
-## 문제1.
-
-아래의 형태로 출력하는 함수를 구현하시오.
-
-```js
-// max는 출력해야 할 최대 라인 수
-function printStar(max) {
-    ... 구현하세요 ...
-}
-
-printStar(5)
-```
-
-#### 출력결과
-
-```
-*
-**
-***
-****
-*****
-```
-```js
-function printStar(max) {
-    for (let i = 0; i<max; i++){
-        str = ""
-        for (let j = 0; j< i+1; j++){
-            str +="*"
-        }
-        console.log(str)
-    }
-}
-printStar(5)
-```
-![결과1](연습결과01.png)
-
-## 문제2.
-
-1번 문제를 응용하여 같은 파라미터를 받았을 때 별을 역으로 출력하는 `printRevStar(max)` 을 구현하시오.
-
-
-#### 출력결과
-
-```
-*****
-****
-***
-**
-*
-```
-
-```js
-function printRevStar(max) {
-    for (let i = 0; i < max; i++){
-        str = ""
-        for(let j = 0; j < max - i; j++){
-            str += "*"
-        }
-        console.log(str)
-    }
-}
-
-printRevStar(5)
-```
-![결과2](연습결과02.png)
-
-
-## 문제3
+/**## 문제3
 
 369게임은 숫자를 순서대로 말하면서 3,6,9가 포함된 횟수만큼 박수를 치는 게임이다.
 
@@ -115,9 +46,7 @@ myGame(35)를 호출한 경우
 박수를 총 OO번 쳤습니다.
 ...
 
-```
-
-```js
+``` */
 let count = 0;
 function myGame(n) {
     for (let i = 1; i < n+1; i++){
@@ -144,5 +73,3 @@ function myGame(n) {
     console.log("박수를 총 %d번 쳤습니다.", count)
 }
 myGame(35)
-```
-![결과3](연습결과03.png)
