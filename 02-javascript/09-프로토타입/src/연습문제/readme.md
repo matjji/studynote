@@ -20,10 +20,41 @@
 #### 출력결과
 
 ```
-철수의 총점은 249점 이고 평균은 83점 입니다.
-영희의 총점은 251점 이고 평균은 83.66666666666667점 입니다.
-민혁의 총점은 264점 이고 평균은 88점 입니다.
+철수의 총점은 250점 이고 평균은 83.33333333333333점 입니다.
+영희의 총점은 265점 이고 평균은 88.33333333333333점 입니다.
+민혁의 총점은 250점 이고 평균은 83.33333333333333점 입니다.
 ```
+
+```js
+const score = {
+    '철수': [92, 81, 77],
+    '영희': [72, 95, 98],
+    '민혁': [80, 86, 84]
+}
+
+function student(ko, en, math) {
+    this._ko = ko
+    this._en = en
+    this._math = math
+}
+
+student.prototype = {
+    sum: function() {
+        let sum = this._ko + this._en + this._math
+        return sum
+    },
+    avg: function() {
+        let avg = (this._ko + this._en + this._math) / score['철수'].length
+        return avg
+    }
+}
+
+for (let i in score){
+    const some = new student(score[i][0], score[i][1], score[i][2])
+    console.log('%s의 총점은 %d점 이고 평균은 %d점 입니다.', i, some.sum(), some.avg())
+}
+```
+![결과1](결과1.PNG)
 
 
 ## 문제2.
@@ -42,3 +73,36 @@
 ```
 둘레의 길이는 30이고 넓이는 50입니다.
 ```
+
+```js
+function Rectangle(w, h) {
+    this._width = w
+    this._height = h
+}
+
+Rectangle.prototype = {
+    get w() {
+        return this._width
+    },
+    set w(param) {
+        this._width = param
+    },
+    get h() {
+        return this._height
+    },
+    set h(param) {
+        this._height = param
+    },
+    getAround: function() {
+        return 2*this._width + 2*this._height
+    },
+    getArea: function() {
+        return this._width*this._height
+    }
+}
+
+const something = new Rectangle(10, 5);
+
+console.log("둘레의 길이는 %d이고 넓이는 %d입니다.", something.getAround() ,something.getArea() )
+```
+![결과2](결과2.PNG)
