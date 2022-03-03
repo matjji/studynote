@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
+    />
+    <title>CSS Example</title>
+    <style type="text/css">
+      div#parent {
+        background-color: #ff6600;
+        width: 500px;
+        height: 300px;
+        /** 문장의 정렬에만 관여한다. 자식요소에게도 상속된다. */
+        text-align: center;
+      }
+
+      div#child {
+        background-color: #00ff00;
+        width: 300px;
+        height: 100px;
+        /** margin은 박스위 위치를 설정한다. */
+        margin-left: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <div id="child">HTML &amp; CSS</div>
+    </div>
+  </body>
+</html>
