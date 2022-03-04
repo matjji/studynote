@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
+    />
+    <title>CSS Example</title>
+    <style type="text/css">
+      div.parent {
+        width: 250px;
+        border: 5px solid #f00;
+        background: #ffff00;
+        margin: auto;
+      }
+      div.child {
+        width: 200px;
+        height: 100px;
+        border: 5px solid #00f;
+        background: #f60;
+        margin: auto;
+      }
+
+      /**시작태그 */
+      .parent:before {
+        content: "parent의 before";
+        display: block;
+        color: red;
+      }
+      .parent:after {
+          content: 'parent의 after';
+          display: block;
+          color: red
+      }
+
+      .child:before {
+        content: "child의 before";
+        display: block;
+        color: green;
+      }
+      .child:after {
+          content: 'child의 after';
+          display: block;
+          color: green
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <!--parent의 before-->
+      <div class="child">
+        <!--child의 before-->
+        박스1
+        <!--child의 after-->
+      </div>
+      <!--parent의 after-->
+    </div>
+  </body>
+</html>
