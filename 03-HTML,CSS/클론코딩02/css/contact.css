@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+.contact {
+    margin-left: 15px;
+}
+.contact_content {
+    padding: 8px 16px 0px 16px;
+}
+.contact_content > p {
+    margin: 15px 0;
+}
+
+.contact_content form {
+    width: 100%
+}
+.contact_content input {
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 8px 0;
+}
+
+.contact_content input::placeholder {
+    font-size: 15px;
+}
+
+.contact_content > form > p {
+    margin: 16px 0;
+}
+
+.contact_content > form > p:first-child {
+    margin: 0;
+}
+
+.contact_content form button {
+    font-size: 15px;
+    border:none;
+    background-color: black;
+    color: white;
+    padding: 10px 16px;
+    margin: 24px 0;
+}
+
+.map_img {
+    width: 100%
+}
