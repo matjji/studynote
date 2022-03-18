@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+body {
+    font-family: "Karma","sans-serif";
+    line-height: 1.5;
+    font-size: 15px;
+    display: block;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Karma","sans-serif";
+    font-weight: 400;
+    margin: 10px 0;
+}
+b {
+    font-weight: bolder;
+}
+i {
+    font-style: italic;
+}
+h3 {
+    font-size: 24px;
+}
+
+hr {
+    opacity: 0.3;
+}
+
+.clear:after {
+    content: '';
+    float: none;
+    clear:both;
+    display: block;
+}
+
+.nav {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.nav_bar {
+    width: 1200px;
+    position: fixed;
+    top:0;
+    background-color: white;
+}
+
+.nav_left {
+    float: left;
+    padding: 16px;
+    font-size: 24px;
+}
+
+.nav_left:hover {
+    background-color: #ccc;
+    cursor:pointer;
+}
+.nav_middle {
+    text-align: center;
+    padding: 16px ;
+    font-size: 24px;
+}
+.nav_right {
+    display: block;
+    float: right;
+    padding: 16px 0;
+    font-size: 24px;
+}

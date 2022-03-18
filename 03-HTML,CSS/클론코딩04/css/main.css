@@ -1,0 +1,185 @@
+
+header {
+    background-image: url(https://www.w3schools.com/w3images/wedding_couple.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 1050px;
+}
+
+.header_text {
+    color: white;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.header_text h1 {
+    font-size: 64px;;
+    letter-spacing: 4px;
+}
+
+.header_text h2,
+.header_text h3 {
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+
+/* Jane % John
+-----------------------------------*/
+.jj {
+    padding: 64px 16px;
+    background-color: #F2E1E1;
+}
+.jj_content{
+    max-width: 980px;
+    margin: auto;
+}
+
+.jj h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.jj img {
+    width: 100%;
+    margin: 32px 0;
+}
+
+.jj_content .jj_text {
+    line-height: 2;
+    margin: 15px 0;
+}
+
+.jj_content .center {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.jj_content > p > a {
+    font-size: 18px;
+    padding: 20px 24px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.jj_content > p > a:hover {
+    background-color: #cccccc;
+    color: black;
+}
+
+/* invited
+--------------------------------*/
+.invited {
+    background-image: url(https://www.w3schools.com/w3images/flowers.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 1020px;
+    width: 100%;
+    margin-top: -10px;
+    position: relative;
+}
+
+.invited_text {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.invited_text h1 {
+    font-size: 64px;
+}
+
+.invited_text h2 {
+    font-size: 30px;
+
+}
+
+/* wedding
+-----------------------------*/
+.wedding {
+    padding: 64px 16px; 
+    background-color: #F2E1E1;
+}
+.wedding_text {
+    max-width: 980px;
+    margin:auto;
+    text-align: center;
+}
+
+.wedding_text h1 {
+    font-size: 36px;
+    color: #777777;
+}
+
+.wedding_text img {
+    border-radius: 4px;
+    margin: 64px 0;
+}
+
+.wedding_ww {
+    width: 100%;
+}
+
+.wedding_ww h2 {
+    font-size: 30px;
+}
+
+.wedding_ww p {
+    margin: 15px 0;
+    line-height: 2;
+}
+
+.wedding_ww .wedding_when {
+    float:left;
+    width: 50%;
+}
+
+.wedding_ww .wedding_where {
+    float: left;
+    width: 50%;
+}
+
+/* RSVP
+--------------------------*/
+.rsvp {
+    text-align: center;
+    padding: 64px 16px;
+    letter-spacing: 4px;
+    background-color: #FFDDDD;
+}
+
+.rsvp h1 {
+    font-size: 36px;
+}
+
+.rsvp > p {
+    margin: 18px 0;
+}
+
+.rsvp > p:last-child {
+    margin: 24px 0;
+}
+
+.rsvp button {
+    border: none;
+    padding: 18px 60px;
+    background-color: #f44336;
+    opacity: 0.6;
+    border-radius: 4px;
+    font-size: 20px;
+    color: white;
+}
+
+.rsvp button:hover {
+    background-color: #CCCCCC;
+    color: black;
+}

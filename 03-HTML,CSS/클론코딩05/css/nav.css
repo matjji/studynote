@@ -1,0 +1,91 @@
+body {
+    font-family: "Raleway", sans-serif;
+    line-height: 1.5;
+    font-size: 15px;
+    display: block;
+    margin: auto;
+    background-color: #F1F1F1;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+  }
+
+  h1 {
+      font-size: 36px;
+  }
+  h4 {
+      font-size: 20px;
+  }
+  
+  b {
+    font-weight: bolder;
+  }
+  .clear:after {
+    content: "";
+    float: none;
+    display: block;
+    clear: both;
+  }
+  hr {
+      margin:20px 0;
+      border-top: 1px solid #eee;
+  }
+
+/* nav
+----------------------------*/
+.nav {
+    width: 300px;
+    height: 100%;
+    position:fixed;
+    background-color: white;
+    top:0;
+}
+
+.nav_container {
+    padding: 0 16px;
+}
+
+.nav_container img {
+    width: 45%;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+
+.nav_container p {
+    color: #777777;
+    margin: 15px 0;
+}
+
+.nav_menu a {
+    display:block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.nav_menu > a:first-child{
+    color: #009688;
+}
+
+.nav_menu > a:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+.nav_menu a i {
+    margin-right: 14px;
+    font-size: 14px;
+}
+
+.nav_icons{
+    margin: 11px 0;
+    padding: 8px 16px;
+    font-size: 17px;
+}
+
+.nav_icons > i:hover {
+    opacity: 0.65;
+}
