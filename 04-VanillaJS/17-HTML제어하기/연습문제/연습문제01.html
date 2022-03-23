@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #time {
+            font-size: 48px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <div id="time"></div>
+
+    <script>
+        
+        setInterval(() => {
+            const time = new Date();
+            let year = time.getFullYear();
+            let month = time.getMonth() + 1;
+            month = month < 10 ? "0" + month : month;
+            let date = time.getDate();
+            date = date < 10 ? "0" + date : date;
+            let hh = time.getHours();
+            hh = hh < 10 ? "0" + hh : hh;
+            let mm = time.getMinutes();
+            mm = mm < 10 ? "0" + mm : mm;
+            let ss = time.getSeconds();
+            ss = ss < 10 ? "0" + ss : ss;
+
+            document.querySelector('#time').innerHTML = year+ "-" + month + "-" + date + " " + hh + ":" + mm + ":" + ss
+        }, 1000);
+        
+    </script>
+</body>
+</html>

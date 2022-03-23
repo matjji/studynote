@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn {
+            border: 1px solid black;
+            color: blue;
+            font-size: 18px;
+            padding: 8px 16px;
+            background-color: #ccc;
+        }
+
+        .active {
+            color: red;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn">푸시알림 수신</button>
+
+    <script>
+        const btn = document.querySelector(".btn")
+        btn.addEventListener("click", (e) =>{
+            btn.classList.toggle("active")
+        })
+    </script>
+</body>
+</html>

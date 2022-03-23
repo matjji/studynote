@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img {
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <img class="img" src="img/iu01.jpg" />
+    </div>
+
+    <script>
+        const imgList = ['img/iu01.jpg', 'img/iu02.jpg', 'img/iu03.jpg']
+        let currentIndex = 0;
+        setInterval(() => {
+            document.querySelector(".img").setAttribute('src', imgList[currentIndex])
+
+            currentIndex = (currentIndex + 1) % imgList.length; 
+        }, 3000)
+    </script>
+</body>
+</html>

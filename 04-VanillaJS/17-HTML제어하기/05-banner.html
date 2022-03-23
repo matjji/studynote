@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="http://www.naver.com" id="bannerLink"><img src="img/1.png" id="bannerImg" width="200" /></a>
+
+    <script>
+        // 출력할 이미지 경로들
+        const imgList = ['img/1.png', 'img/2.jpg', 'img/3.jpg'];
+        const urlList = ['https://www.naver.com', 'https://www.daum.net', 'https://www.google.com'];
+
+        //현재 출력하고 있는 이미지의 인덱스
+        let currentIndex = 0;
+
+        setInterval(() => {
+            document.querySelector('#bannerImg').setAttribute('src', imgList[currentIndex]);
+            document.querySelector('#bannerLink').setAttribute('href', urlList[currentIndex]);
+            // currentIndx++;
+            // if (currentIndex >= imgList.length) {
+            //    currentIndex = 0;
+            //}
+
+            currentIndex = (currentIndex + 1) % imgList.length;
+        }, 1000);
+    </script>
+</body>
+</html>
