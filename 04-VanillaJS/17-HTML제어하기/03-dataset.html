@@ -7,8 +7,8 @@
 </head>
 <body>
     <!-- data-* 속성 사용-->
-    <button type="button" class="mybtn" data-name="javascript" data-age="20">javascript;20</button>
-    <button type="button" class="mybtn" data-name="vanilla" data-age="15">vanilla;15</button>
+    <button type="button" class="mybtn" data-name="javascript" data-age="20" data-color="#f60" data-background="#060">javascript;20</button>
+    <button type="button" class="mybtn" data-name="vanilla" data-age="15" data-color="#06f" data-background="#990">vanilla;15</button>
     <h1 id="console"></h1>
     <script>
         /*
@@ -27,6 +27,14 @@
                // HTML 태그에 없는 송성을 출력하거나 다른 변수에 복사하는 경우 undefined
                console.log(e.currentTarget.dataset.test);
             })
+       })
+
+       document.querySelectorAll('*[data-color]').forEach((v, i) => {
+           v.style.color = v.dataset.color;
+       });
+
+       document.querySelectorAll('*[data-background]').forEach((v, i) => {
+           v.style.background = v.dataset.background;
        })
     </script>
 </body>
