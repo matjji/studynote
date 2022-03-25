@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .collape-title {
+            display: block;
+            cursor: pointer;
+            color: white;
+            background-color: #777;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            font-weight: normal;
+            margin: 0;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 180ms ease-out;
+        }
+    </style>
+</head>
+<body>
+    <h2>Animated Collapsibles</h2>
+    <p>
+        A Collapsible 
+        <button class="addcol">add</button>
+    </p>
+    <div class="total">
+        <div class="collapse">
+            <h1 class="collape-title">Open Collapsible</h1>
+            <div class="content">
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus laboriosam sed sint quod, architecto vel blanditiis aut at dolore maxime harum ullam error inventore repudiandae placeat maiores necessitatibus tempora aliquam?
+                </p>
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+        const total = document.querySelector('.total');
+
+        const onClick = e => {
+                const target = e.currentTarget;
+                const collapse = target.closest('.collapse')
+                const content = collapse.querySelector('.content')
+
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null
+                } else {
+                    content.style.maxHeight = content.scrollHeight + 'px'
+                }
+        }
+        document.querySelectorAll('.collape-title').forEach((v, i) => {v.addEventListener('click', onClick)})
+
+        document.querySelector('.addcol').addEventListener('click', e => {
+            const div = document.createElement('div');
+            div.classList.add("collapse")
+            total.appendChild(div);
+            
+            const h1 = document.createElement('h1');
+            h1.classList.add("collape-title");
+            h1.innerHTML = document.querySelector(".collape-title").innerHTML;
+            div.appendChild(h1);
+
+            const div2 = document.createElement('div');
+            div2.classList.add("content")
+            div2.innerHTML = document.querySelector(".content").innerHTML;
+            div.appendChild(div2);
+            
+            h1.addEventListener("click", onClick)
+        })
+        
+
+    </script>
+</body>
+</html>
