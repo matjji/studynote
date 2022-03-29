@@ -1,0 +1,48 @@
+.content {
+    width: 460px;
+    margin: auto;
+}
+.title {
+    font-size: 14px;
+    display: block;
+    margin: 19px 0 8px 0;
+    font-weight: 600;
+    font-family: "dotum";
+}
+
+.box_sm {
+    display: block;
+    border: 1px solid #dadada;
+    background-color: #fff;
+    outline: 0;
+    position: relative;
+    padding: 10px 40px 10px 14px;
+    cursor:pointer;
+}
+
+.box_sm > .box_sm-span {
+    position: absolute;
+    line-height: 18px;
+    right: 18px;
+    top: 30%;
+    color: #8e8e8e;
+    z-index: 10;
+}
+
+.boxjs.focus{
+    border:1px solid #00C850;
+}
+
+.box_sm > .pw_false {
+    color: red;
+    font-size: 13px;
+}
+
+.box_sm > .pw_false i,
+.box_sm > .pw_true i {
+    margin-left: 5px;
+}
+
+.box_sm > .pw_true {
+    color: #00C850;
+}

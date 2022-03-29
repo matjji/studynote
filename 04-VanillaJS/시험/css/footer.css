@@ -1,0 +1,58 @@
+/* footer */
+.footer {
+    margin: auto;
+    max-width: 768px;
+    min-width: 460px;
+    padding: 30px 0 15px 0;
+    text-align: center;
+    font-size: 11px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #5e5e5e
+}
+
+.footer > ul {
+    margin-bottom: 9px;
+    
+}
+.footer ul li {
+    display: inline;
+    padding: 0 3px 0 7px;
+    text-decoration: none;
+    border-left: 1px solid #CFCFCF;
+    font-size: 12px;
+}
+
+.footer ul li:first-child {
+    border:none;
+}
+
+.footer strong {
+    font-weight: bolder;
+    font-size: 13px;
+}
+
+.footer address a {
+    color: #5e5e5e;
+    font-weight: bolder;
+}
+.footer a:hover {
+    text-decoration: underline;
+    color: #00C850;
+}
+.logo_sm {
+    position: relative;
+    display: inline-block;
+    width: 63px;
+    height: 12px;
+    background: url(https://static.nid.naver.com/images/ui/login/pc_sp_login_190522.png) no-repeat;
+    background-position: -242px 0;
+    background-size: 460px auto;
+}
+
+.pad-left {
+    font:9px;
+    padding-left: 4px;
+}

@@ -1,0 +1,29 @@
+
+/* 로고 */
+.logo {
+    max-width: 768px;
+    min-width: 460px;
+    height: 44px;
+    margin: auto;
+    padding: 60px 0 20px 0;
+}
+
+.logo h1 {
+    height: 44px;
+}
+
+.logo_n {
+    display: block;
+    margin: 0 auto;
+    width: 240px;
+    height: 44px;
+    background-image: url(https://static.nid.naver.com/images/ui/join/m_naver_logo_20191126.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 240px auto;
+}
+
+.logo_n a {
+    cursor: pointer;
+    text-decoration: none;
+}

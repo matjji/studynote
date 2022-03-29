@@ -1,0 +1,210 @@
+
+body {
+    width: 100%;
+    background-color: #F5F6F7;
+}
+label {
+    cursor: pointer;
+}
+
+.join_form {
+    display: block;
+    width: 100%;
+}
+.container {
+    max-width: 768px;
+    min-width: 460px;
+    margin: auto;
+}
+
+/* 내용을 담는 상자*/
+.content {
+    width: 460px;
+    margin: auto;
+}
+/* input에 대한 CSS코드*/
+input {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 29px;
+    padding-right: 25px;
+    line-height: 29px;
+    border: none;
+    background: #fff;
+    font-size: 15px;
+    box-sizing: border-box;
+    z-index: 10;
+    cursor:pointer;
+}
+/* input이 focus 되었을때 */
+input:focus {
+    outline: none;
+}
+/* input의 placeholder의 투명도 0.7*/
+input::placeholder {
+    opacity: 0.7;
+}
+
+/* 클릭했을때 추가된 focus css코드*/
+.boxjs.focus{
+    border:1px solid #00C850;
+}
+/* 아이디 부분은 focus 되어도 기본 효과*/
+.box_xs.focus{
+    border: 1px solid #dadada;
+}
+
+/* 아이디 부분 작은 상자 */
+.box_xs {
+    display: block;
+    border: 1px solid #dadada;
+    background-color: #fff;
+    outline: 0;
+    position: relative;
+    padding: 10px 110px 10px 14px; 
+    cursor:pointer;
+}
+/* 아이디 부분 작은상자의 @naver.com을 넣기 위한 CSS 코드*/
+.box_xs > span {
+    position: absolute;
+    line-height: 18px;
+    right: 13px;
+    top: 16px;
+    color: #8e8e8e;
+}
+/* 제목에 적용할 CSS 코드 */
+.title {
+    font-size: 14px;
+    display: block;
+    margin: 19px 0 8px 0;
+    font-weight: 600;
+    font-family: "dotum";
+}
+/* 아이디 @naver.com에 적용할 타이틀*/
+.title_m {
+    font-size: 15px;
+    font-weight: 300;
+    font-family: "dotum";
+}
+/* 이메일 (선택)에 적용할 타이틀*/
+.title_sm {
+    font-size: 12px;
+    color: #9d9d9d;
+    opacity: 0.8;
+    font-weight: 300;
+    cursor: pointer;
+}
+/* float 적용하기*/
+.left-lg {
+    float: left;
+    width: 305px;
+}
+/*비빌번호가 들어갈 상자*/
+.box_sm {
+    display: block;
+    border: 1px solid #dadada;
+    background-color: #fff;
+    outline: 0;
+    position: relative;
+    padding: 10px 40px 10px 14px;
+    cursor:pointer;
+}
+/*비밀번호의 아이콘이 들어갈 상자*/
+.box_sm > .box_sm-span {
+    position: absolute;
+    line-height: 18px;
+    right: 18px;
+    top: 30%;
+    color: #8e8e8e;
+    z-index: 10;
+}
+/*아이디와 비밀번호를 제외한 나머지 상자*/
+.box {
+    padding: 10px 14px;
+    display: block;
+    border: 1px solid #dadada;
+    background-color: #fff;
+    outline: 0;
+    position: relative;
+}
+/* 비밀번호 틀렸을 때 추가되는 클래스 CSS코드*/
+.box_sm > .pw_false {
+    color: red;
+    font-size: 13px;
+}
+/* 비밀번호 틀리거나 맞았을 때 icon에 적용되는 CSS코드*/
+.box_sm > .pw_false i,
+.box_sm > .pw_true i {
+    margin-left: 5px;
+}
+/* 비밀번호 맞았을 때 추가되는 클래스 CSS코드*/
+.box_sm > .pw_true {
+    color: #00C850;
+}
+/* margin-top을 적용하기 위한 CSS 코드*/
+.mar-top {
+    margin-top: 40px;
+}
+/* margin-top을 조금 적용하기 위한 CSS 코드*/
+.mar-top_xs {
+    margin-top: 10px;
+}
+/* 생년월일 float css 코드 */
+.left {
+    float: left;
+    width: 31.8%;
+}
+/* margin-right css코드*/
+.mar-right {
+    margin-right: 10px;
+}
+/* float 마감제*/
+.clear:after {
+    content: '';
+    clear: both;
+    float: none;
+    display: block;
+}
+/* select태그에 적용될 CSS 코드*/
+.select_sel {
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    height: 29px;
+    font-size: 14px;
+    font-family: "dotum";
+}
+/* selsct 태그 focus시 outline 제거*/
+.select_sel:focus {
+    outline: none;
+}
+/* 인증번호 버튼 CSS코드*/
+.btn {
+    display: block;
+    width: 115px;
+    float: left;
+    height: 51px;
+    border: none;
+    background-color: #00C850;
+    color: #fff;
+    font-size: 15px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.btn_area {
+    margin: 30px auto 10px auto;
+    width: 460px;
+}
+
+.sub_btn {
+    width: 100%;
+    padding: 15px 0;
+    background-color: #00C850;
+    cursor:pointer;
+    height: 52px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+}
