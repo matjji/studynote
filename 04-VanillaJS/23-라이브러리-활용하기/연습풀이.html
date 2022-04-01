@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .subplot {
+            float: left;
+            width: 33.3%;
+            padding: 50px;
+            box-sizing: border-box;
+        }
+
+        .subplot-item {
+            width: auto;
+            height: 320px;
+        }
+    </style>
+</head>
+<body>
+    <!--학과별 학생수 세로 막대 그래프-->
+    <div class="subplot">
+        <h2>학과별 학생수</h2>
+        <div class="subplot-item">
+            <canvas id="mychart1"></canvas>
+        </div>
+    </div>
+
+    <!--학년에 따른 평균 나이 변화 선 그래프-->
+    <div class="subplot">
+        <h2>학년에 따른 평균 나이 변화</h2>
+        <div class="subplot-item">
+            <canvas id="mychart2"></canvas>
+        </div>
+    </div>
+
+    <!--학년별 평균키와 평균 몸무게 다중 막대 그래프-->
+    <div class="subplot">
+        <h2>학년별 평균키와 평균 몸무게</h2>
+        <div class="subplot-item">
+            <canvas id="mychart3"></canvas>
+        </div>
+    </div>
+    <script src="dataset.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+    <script>
+        // 평균구하기 함수
+        function getAvg(data) {
+            let sum = 0;
+            data.forEach((v, i) => {
+                sum += v
+            })
+            return sum / data.length
+        }
+    </script>
+    <script>
+        //학과 및 학생수
+        const department = []
+        const studentCount = []
+        student.forEach((v,i) => {
+            // i번째 학생의 학과이름 추출
+            d = v.deptno
+            // department에 학과 있는지 확인
+            p = department.indexOf(d)
+            if (p == -1) {
+                department.push(d)
+                studentCount.push(1)
+            } else {
+                studentCount[p]++
+            }
+        })
+        console.log(department)
+        console.log(studentCount)
+
+        const mychart1 = document.querySelector('#mychart1')
+
+        //그래프 만들기
+
+        new Chart(mychart1, {
+            //그래프 종류
+            type: 'bar',
+
+            //데이터 종류 
+            data: {
+                labels: department,
+
+                datasets: [
+                    {
+                        label: "학생수",
+                        data: studentCount,
+                        borderWidth: 0.5,
+                        borderColor: 'rgba(255,99,132,1)',
+                        backgroundColor:"rgba(255,99,132,0.2)",
+                    },
+                ],
+            },
+            options: {
+                maintainAspectRatio: false,
+            },
+        })
+    </script>
+
+    <script>
+        const ageInfo = {}
+
+        const nowYear = new Date().getFullYear()
+
+        student.forEach((v, i) => {
+            const key = v.grade + "학년";
+
+            const birthYear = parseInt(v.birthdate.substring(0,4))
+
+            const age = nowYear - birthYear + 1
+
+            if (ageInfo[key] === undefined) {
+                ageInfo[key] = [age]
+            } else {
+                ageInfo[key].push(age)
+            }
+        })
+
+        const level = [];
+        const age = [];
+        for (let key in ageInfo) {
+            level.push(key)
+            age.push(getAvg(ageInfo[key]))
+        };
+
+        for (let i = 0; i < level.length - 1; i++) {
+            for (let j = i+1; j < level.length; j++) {
+                const x = parseInt(level[i])
+                const y = parseInt(level[j])
+
+                if (x > y) {
+                    let tmp = level[i]
+                    level[i] = level[j]
+                    level[j] = tmp
+
+                    tmp = age[i]
+                    age[i] = age[j]
+                    age[j] = tmp
+                }
+            }
+        }
+        console.log(level)
+        console.log(age)
+
+        const mychart2 = document.querySelector('#mychart2')
+
+        new Chart(mychart2, {
+            type:"line",
+
+            data: {
+                labels: level,
+
+                datasets: [
+                    {
+                        label: "평균나이",
+                        data: age,
+                        borderWidth: 1,
+                        borderColor: "#ff6600"
+                    },
+                ],  
+            },
+           
+            options: {
+                //그래프의 가로, 세로 비율 유지(기본값=true) -> 부모 div의 넓이에만 맞추고 높이는 무시함
+                //false로 설정할 경우 부모의 widht, height에 크기를 맞춤
+                maintainAspectRatio: false,
+            },
+        })
+    </script>
+
+    <script>
+        const bodyInfo = {}
+
+        student.forEach((v, i) => {
+            const key = v.grade + "학년";
+
+            if (bodyInfo[key] === undefined) {
+                bodyInfo[key] = {height: [v.height], weight: [v.weight]}
+            } else {
+                bodyInfo[key].height.push(v.height);
+                bodyInfo[key].weight.push(v.weight);
+            }
+        })
+
+        console.log(bodyInfo);
+
+        const grade = []
+        const height = []
+        const weight = []
+
+        for (let key in bodyInfo) {
+            grade.push(key)
+            height.push(getAvg(bodyInfo[key].height))
+            weight.push(getAvg(bodyInfo[key].weight))
+        }
+
+    for (let i = 0; i < grade.length - 1; i++) {
+        for (let j = i + 1; j < grade.length; j++) {
+            if (parseInt(grade[i]) > parseInt(grade[j])) {
+                let tmp = grade[i]
+                grade[i] = grade[j]
+                grade[j] = tmp
+
+                tmp = height[i]
+                height[i] = height[j]
+                height[j] = tmp
+
+                tmp = weight[i]
+                weight[i] = weight[j]
+                weight[j] = tmp
+            }
+        }
+    }
+        console.log(grade);
+        console.log(height);
+        console.log(weight);
+
+        const mychart3 = document.querySelector('#mychart3')
+
+        new Chart(mychart3, {
+            type: "bar",
+
+            data: {
+                labels: grade,
+
+                datasets: [
+                    {
+                        label: "키",
+                        data: height,
+                        borderWidth: 0.5,
+                        borderColor: 'rgba(54,162,235,1)',
+                        backgroundColor: 'rgba(54,162,235,0.2)'
+                    },
+
+                    {
+                        label: '몸무게',
+                        data: weight,
+                        borderColor: 'rgba(255,99,132,1)',
+                        backgroundColor:"rgba(255,99,132,0.2)",
+                    },
+
+                ],
+            },
+            
+            options: {
+                //그래프의 가로, 세로 비율 유지(기본값=true) -> 부모 div의 넓이에만 맞추고 높이는 무시함
+                //false로 설정할 경우 부모의 widht, height에 크기를 맞춤
+                maintainAspectRatio: false,
+            },
+
+        })
+    </script>
+</body>
+</html>
