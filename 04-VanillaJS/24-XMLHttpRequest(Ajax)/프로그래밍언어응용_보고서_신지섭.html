@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #loading {
+            height: 100px;
+            width: 100px;
+            background-image: url('img/loading.gif');
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -50px;
+            margin-left: -50px;
+            display: none;
+            z-index: 9999;
+        }
+
+        #loading.active {
+            display: block;
+        }
+        body {
+            padding-top: 127px;;
+        }
+
+        #header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            z-index: 100;
+            padding: 0px 10px 5px 10px;
+            box-sizing: border-box;
+        }
+
+        #list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #list li {
+            border-bottom: 1px dotted #d5d5d5;
+        }
+        #list li:first-child {
+            border-top: 1px dotted #d5d5d5;
+        }
+
+        #list a {
+            display: block;
+            text-decoration: none;
+            color: black;
+            width: auto;
+            position: relative;
+            min-height: 150px;
+            padding: 10px;
+            padding-left: 130px;
+        }
+
+        #list a img {
+            display: block;
+            width: 100px;
+            height: 150px;
+            object-fit: cover;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        #list a h2 {
+            font-size: 18px;
+            margin-top: 10px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 1; /*라인 수*/
+            -webkit-box-orient: vertical;
+            word-wrap: break-word;
+        }
+
+        #list a p {
+            font-size: 14px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3; /*라인 수*/
+            -webkit-box-orient: vertical;
+            word-wrap: break-word;
+        }
+
+        #list a span {
+            font-size: 14px;
+        }
+
+        #list span.rightbar:after {
+            content: '|';
+            margin: 0 7px 0 7px;
+        }
+        #list span.rightbar:last-child:after {
+            content: '';
+        }
+    </style>
+</head>
+<body>
+    <div id="loading"></div>
+
+    <div id="header">
+        <h1>카카오 책 검색</h1>
+
+        <form id="searchForm">
+            <fieldset>
+                <select name="sort" id="sort-source">
+                    <option value="accuracy">정확도순</option>
+                    <option value="latest">발간일순</option>
+                </select>
+                <select name="size" id="size-source">
+                    <option value="10">10건</option>
+                    <option value="20">20건</option>
+                    <option value="30">30건</option>
+                    <option value="40">40건</option>
+                    <option value="50">50건</option>
+                </select>
+                <input type="search" id="query" placeholder="Search ..."/>
+                <button type="submit">검색</button>
+            </fieldset>
+        </form>
+    </div>
+    <ul id="list">
+        <!--<li>
+            <a href="#" targe="_blank">
+                <img src="img/noimage.jpg" />
+                <h2>책 제목</h2>
+                <p>내용</p>
+                <span class="rightbar">작가</span>
+                <span class="rightbar">출판사</span>
+                <span class="rightbar">가격</span>
+                <span class="rightbar">할인가</span>
+            </a>
+        </li>-->
+    </ul>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="search_book.js"></script>
+</body>
+</html>
