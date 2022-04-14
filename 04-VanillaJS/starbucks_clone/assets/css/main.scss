@@ -1,0 +1,89 @@
+.main_img {
+    background: url('../img/2022_Summer1_main_bg.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 646px;
+    position: relative;
+    top: 122px;
+}
+
+.imgs {
+    position: relative;
+    width: 1130px;
+    margin: auto;
+}
+
+.card_img {
+    position: fixed;
+    width: 140px;
+    height: 192px;
+    margin-left:485px;
+    top: 154px;
+    left: 54.5%;
+    z-index: 1001;
+}
+.card_imgs{
+    width: 140px;
+    height: 96px;
+}
+
+.img_collection {
+    position: relative;
+    width: 1130px;
+    margin: auto;
+}
+
+.img_find {
+    width: 282px;
+    height: 175px;
+    position: absolute;
+    top: 47px;
+    left: 44px
+}
+
+.img_punch {
+    opacity: 0;
+    position: absolute;
+    width: 468px;
+    height: 315px;
+    top: 217px;
+    left: 221px;
+    transition: opacity 0.4s linear;
+}
+.img_rollin {
+    opacity: 0;
+    position: absolute;
+    width: 548px;
+    height: 408px;
+    top: 77px;
+    left: 404px;
+    transition: opacity 0.4s linear;
+}
+.img_pomelo {
+    opacity: 0;
+    position: absolute;
+    width: 302px;
+    height: 459px;
+    left: 918px;
+    top: 102px;
+    transition: opacity 0.4s linear;
+}
+
+.detail {
+    position: absolute; 
+    line-height: 34px;
+    width: 129px;
+    border: 2px solid #d73a7a;
+    text-align: center;
+    a {
+        display: block;
+        color: #d73a7a;
+        height: 34px;
+        width: 129px;
+        font-size: 14px;
+    }
+    transition: all 0.3s linear;
+    border-radius: 5px;
+    top: 251px;
+    left: 119px;
+}
