@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    font-family: 'nbg','맑은 고딕';
 }
 
 body {
@@ -87,6 +86,11 @@ ul, li {
     }
     transition: all 0.3s linear;
 }
+.header_list > ul > li {
+    &:after:last-child {
+        content: ''
+    }
+}
 
 .header_search {
     position: absolute;
@@ -120,12 +124,6 @@ ul, li {
         z-index: 2;
         top: 6px;
         right: 7px;
-    }
-}
-
-.header_list > ul > li {
-    &:after:last-child {
-        content: ''
     }
 }
 

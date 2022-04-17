@@ -1,0 +1,140 @@
+/** CSS 공통사항*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 58vw;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    color: black;
+}
+ul, li {
+    display: block;
+}
+
+a:visited  {
+    color: black;
+}
+/** float 마감제*/
+.clear:after {
+    display: block;
+    content: '';
+    clear: both;
+    float: none;
+}
+
+/** 메뉴창 열었을 때 흐린 화면 */
+.dimd {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 2;
+    position: fixed;
+    top: 65px;
+    left: 0;
+}
+
+header {
+    height: 65px;
+    background-color: white;
+    width: 100%;
+    border-bottom: 1px solid #dadada;
+}
+
+.container {
+    max-width: 1480px;
+    margin: auto;
+    position: relative;
+    padding: 0 20px;
+    z-index: 100;
+}
+
+/** logo*/
+.logo_box {
+    float: left;
+    width: 255px;
+    margin-right: 15px;
+}
+.logo_box a{
+    width: 200px;
+    height: 64px;
+    cursor: pointer;
+    background: url('../img/SD_logo.PNG') no-repeat center center;
+    background-size: 200px 60px;
+    z-index: 1000;
+}
+
+/** 메뉴*/
+.menu_back {
+    position: absolute;
+    top: 65px;
+    height: 240px;
+    width: 100%;
+    z-index: 3;
+    background-color: white;
+}
+.menu_box {
+    float: left;
+}
+
+.list_box > li {
+    float: left;
+}
+
+.list_box > li > a {
+    padding: 24px 22px;
+    font-weight: bolder;
+}
+
+.list_box > li > a:hover {
+    border-bottom: 2px solid black;
+}
+
+.list_box .sub {
+    position: absolute;
+    max-height: 0px;
+    overflow: hidden;
+}
+
+.sub > ul {
+    padding: 20px 0;
+}
+
+.sub > ul > li {
+    padding: 5px 22px;
+    height: 32px;
+    z-index: 1000;
+    font-size: 12px;
+}
+
+.sub > ul > li:hover {
+    font-weight: bold;
+}
+
+
+/**언어*/
+.language_box {
+    float: right;
+    vertical-align: middle;
+}
+
+.language_box  > ul > li {
+    display: block;
+    float: left;
+    padding: 26px 15px;
+    font-size: 14px;
+}
+
+.none {
+    display: none;
+}
+
+.icon_box {
+    display: none;
+}

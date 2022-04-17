@@ -1,0 +1,216 @@
+.main {
+    margin: 0 auto;
+}
+
+.main_content {
+    padding: 75px 0;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+.content_text h2 span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #012D60;
+}
+
+.content_text h2 p {
+    margin: 8px 0 20px 0;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.content_img {
+    position: relative;
+}
+
+.content_img_text {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+}
+
+.content_img_text p:first-child {
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.content_img_text p:last-child {
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.main_content-one {
+    padding: 30px 0;
+    margin-bottom: 50px;
+}
+
+.abox {
+    height:100%;
+    padding: 30px 0;
+    margin-bottom: 50px;
+}
+
+.abox:nth-child(10),
+.abox:nth-child(11),
+.abox:nth-child(12) {
+    padding-bottom: 0;
+    margin-bottom: 0
+}
+
+.img {
+    position: relative;
+    margin-right: 32px;
+}
+
+.main_content-one .left:nth-child(3n) .img {
+    margin-right: 0;
+}
+.text {
+    position: absolute;
+}
+.text span {
+    font-size: 12px;
+    font-weight: bold;
+    color: #012D60;
+    margin: 10px 0;
+}
+
+.text p {
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: bold;
+}
+.big {
+    width: 448px;
+}
+
+.normal {
+    width: 352px;
+}
+
+.small {
+    width: 256px;
+}
+
+.main_blue_back {
+    margin-top: 200px;
+    width: 100%;
+    height: 595px;
+    background-color: #002C5F;
+}
+
+.blue {
+    width: 1120px;
+    margin: 0 auto;
+    position: relative;
+}
+.blue img {
+    margin: 150px 0 0 100px;
+}
+
+.blue_text {
+    color: white;
+    width: 270px;
+    position: absolute;
+    top: 50%;
+    right: 16%;
+    transform: translateY(-20%);
+}
+.blue_text p:first-child {
+    line-height: 1.6;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.blue_text p:nth-child(2) {
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 2;
+    margin: 20px 0;
+}
+.blue_text h2 a {
+    padding: 8px 32px;
+    background-color: #777673;
+    text-align: center;
+    color: white;
+}
+
+.social {
+    margin: 0 auto;
+}
+
+.social_img {
+    margin: 0 32px 32px 0;
+}
+
+.social_img:nth-child(4), 
+.social_img:nth-child(7) {
+    margin-right: 0px;
+}
+
+.social_img:nth-child(4), 
+.social_img:nth-child(7) {
+    margin-right: 0px;
+}
+
+.social_img a span {
+    width: 296px;
+    height: 296px;
+    padding: 33px;
+    background-color: #002C5F;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: bold;
+}
+.social_img  {
+    position: relative;
+    width: 352px;
+    height: 352px;
+}
+.social_img:nth-child(2) {
+    background: url('../img/worldwide-main-instagram-01-8iihs-220315.webp') no-repeat;
+}
+.social_img:nth-child(3) {
+    background: url('../img/worldwide-main-instagram-02-womens-day-220315.webp') no-repeat;
+}
+.social_img:nth-child(4) {
+    background: url('../img/worldwide-main-instagram-03-ioniq5-220315.webp') no-repeat;
+}
+.social_img:nth-child(5) {
+    background: url('../img/worldwide-main-instagram-04-asmr-220315.webp') no-repeat;
+}
+.social_img:nth-child(6) {
+    background: url('../img/worldwide-main-instagram-05-asmr-220315.webp') no-repeat;
+}
+.social_img:nth-child(7) {
+    background: url('../img/worldwide-main-instagram-06-asmr-220315.webp') no-repeat;
+}
+
+.social_img span img {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    bottom: 33px;
+    left: 33px;
+}
+.social_img a{
+    opacity: 0;
+}
+.social_img a:hover {
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+}

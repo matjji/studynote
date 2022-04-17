@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+body {
+    font-family: "Verdana","sans-serif";
+    line-height: 1.5;
+    display: block;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+b {
+    font-weight: bolder;
+}
+
+.clear:after {
+    content: '';
+    float:none;
+    clear: both;
+    display: block;
+}
+
+.nav_bar {
+    height: 55px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1), 0 2px 10px rgba(0,0,0,0.2);
+    letter-spacing: 4px;
+    font-size: 15px;
+}
+
+.nav_bar a {
+    text-decoration: none;
+    color: black;
+    padding: 8px 16px;
+}
+.nav_bar a:hover {
+    background-color: #cccccc;
+}
+
+.nav_left {
+    position: relative;
+    display: block;
+    margin: 8px 18px;
+    width: auto;
+    top: 7px;
+    right: 2px;
+}
+
+.nav_right {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+}
+.nav_right a {
+    margin-left: -9px;
+}
+
+/* footer */
+
+
+.footer {
+    font-size: 15px;
+    padding: 32px 0;
+    width: auto;
+    color: white;
+    background-color: #000000;
+    text-align: center;
+}
+.footer p {
+    
+    vertical-align: middle;
+}
+
+.footer a:visited{
+    color: white;
+}
+
+.footer a:hover {
+    color: green;
+}

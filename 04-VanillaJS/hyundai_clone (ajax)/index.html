@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>현대자동차 클론코딩(ajax)</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/main(ajax).css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+</head>
+<body>
+    <div class="header">
+        <div class="menu_box clear">
+            <div class="logo_box clear">
+                <a href="#">
+                    <img src="./assets/img/logo.webp" alt="현대자동차 로고"/>
+                </a>
+            </div>
+            <div class="menu clear">
+                <ul>
+                    <li><a href="#">브랜드</a></li>
+                    <li><a href="#">아이오닉</a></li>
+                    <li><a href="#">라이프스타일</a></li>
+                    <li>
+                        <a href="#">
+                            모델
+                        </a>
+                    </li>
+                    <li>
+                        <a id="event" href="#">회사소개</a>
+                        <ul class="menu_sub">
+                            <li><a href="#">기업이념</a></li>
+                            <li><a href="#">지속가능성</a></li>
+                            <li><a href="#">해외사업망</a></li>
+                            <li><a href="#">IR정보</a></li>
+                            <li><a href="#">뉴스</a></li>
+                            <li><a href="#">문의하기</a></li>
+                            <li class="close_btn">
+                                <a href="#"><img src="assets/img/noticeCloseBtn.png"></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu_right">
+                <ul>
+                    <li><a href="#"><img src="assets/img/btn_topmenu_language.png" alt=""></a></li>
+                    <li><a href="#"><img src="assets/img/btn_topmenu_Channelh.webp" alt=""></a></li>
+                    <li>
+                        <a id="search_event" href="#"><img src="assets/img/btn_topmenu_search.png" alt=""></a>
+                        <div class="search">
+                            <div class="search_content">
+                                <input type="text" placeholder="검색어를 입력해 주세요.">
+                                <button type="button" class="search_btn">
+                                    <img src="assets/img/btn_topmenu_search.png" />
+                                </button>
+                                <div>추천 검색어</div>
+                                <ul>
+                                    <li><a href="#">IONIQ 5</a></li>
+                                    <li><a href="#">NEXO</a></li>
+                                    <li><a href="#">Elantra</a></li>
+                                    <li><a href="#">Kona</a></li>
+                                    <li><a href="#">Sustainability</a></li>
+                                    <li><a href="#">EV</a></li>
+                                </ul>
+                                <button type="button" class="search_close_btn">
+                                    <img src="assets/img/btn_search_close.webp" />
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="language">
+                        <a href="#">Language</a>
+                        <ul id="langEvent">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">한국어</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul class="hashtag">
+            <li><a href="#"><span># 아이오닉 5</span></a></li>
+            <li><a href="#"><span># 인터뷰</span></a></li>
+            <li><a href="#"><span># 넥쏘</span></a></li>
+            <li><a href="#"><span># 브랜드비전</span></a></li>
+            <li><a href="#"><span># 현대자동차x방탄소년단</span></a></li>
+            <li><a href="#"><span># 아임인차지</span></a></li>
+            <li><a href="#"><span># for Tomorrow</span></a></li>
+            <li><a href="#"><span># 현대자동차x블룸버그</span></a></li>
+        </ul>
+    </div>
+    <div class="main" style="max-width:1120px">
+        
+    </div>
+    <div class="main_blue_back">
+        <div class="blue">
+            <img src="assets/img/main-hyundai-in-your-country-pc.webp" />
+            <div class="blue_text">
+                <h2>
+                    <p>국가별 사이트를 방문해 보세요.</p>
+                    <p>국가별 사이트를 방문하면 더 자세한 정보를 확인할 수 있습니다.</p>
+                    <a href="#">바로가기</a>
+                </h2>
+            </div>
+        </div>
+    </div>
+    <div class="social" style="max-width:1120px">
+        <div class="main_content clear">
+            <div class="content_text">
+                <h2>
+                    <span>
+                        소셜미디어
+                    </span>
+                    <p>소셜미디어 둘러보기</p>
+                </h2>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_content" style="max-width:1120px">
+            <p>
+                <a href="#">
+                    <img src="assets/img/footer_logo_pc.webp"/>
+                </a>
+            </p>
+            <div class="footer_menu">
+                <ul>
+                    <li>
+                        <div>문의/법적고지</div>
+                        <ul>
+                            <li><a href="#">법적고지</a></li>
+                            <li><a href="#">개인정보 처리방침</a></li>
+                            <li><a href="#">쿠키정책</a></li>
+                            <li><a href="#">사이트맵</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div>기업소개</div>
+                        <ul>
+                            <li><a href="#">관계사</a></li>
+                            <li><a href="#">사업망</a></li>
+                            <li><a class="back" href="#">협력업체</a></li>
+                            <li><a href="#">모델 히스토리</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div>관련 사이트</div>
+                        <ul>
+                            <li><a class="back" href="#">N</a></li>
+                            <li><a class="back" href="#">현대 모터스튜디오</a></li>
+                            <li><a class="back" href="#">채널현대</a></li>
+                            <li><a class="back" href="#">현대아트랩</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div>Hyundai Social Media</div>
+                        <div class="li_content">
+                            <span>Worldwide</span>
+                            <ul>
+                                <li><a href="#"><img src="./assets/img/facebook.webp"/></a></li>
+                                <li><a href="#"><img src="./assets/img/instagram.png"/></a></li>
+                                <li><a href="#"><img src="./assets/img/youtube.webp"/></a></li>
+                                <li><a href="#"><img src='./assets/img/twitter.webp'/></a></li>
+                            </ul>
+                        </div>
+                        <div class="li_content">
+                            <span>LifeStyle</span>
+                            <ul>
+                                <li><a href="#"><img src="assets/img/instagram.webp" /></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <address>
+                &copy; 2022 Hyundai Motor Company
+            </address>
+        </div>
+    </div>
+    <script src="assets/js/header.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="assets/js/content.js"></script>
+    <script src="assets/js/social.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.min.js"></script>
+    <script src="assets/js/notice.js"></script>
+    <script>
+        Notice.init('신지섭', './hyundai_clone(ajax).pdf')
+    </script>
+</body>
+</html>

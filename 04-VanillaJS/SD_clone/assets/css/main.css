@@ -1,0 +1,174 @@
+/** main 높이 넓이 추가*/
+.main {
+    width: 100%;
+    height: 50vw;
+}
+/** swiper */
+.swiper {
+    width: 100%;
+    height: 35vw;
+}
+
+.swiper-wrapper,
+.swiper-slide{
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide .color {
+    float: left;
+    width: 17%;
+    height: 100%;
+}
+
+.swiper-slide .content {
+    position: absolute;
+    left: 3.8%;
+    top: 50%;
+    color: white;
+    transform: translateY(-50%);
+}
+.swiper-slide:nth-child(4) .content,
+.swiper-slide:nth-child(5) .content {
+    color: black;
+}
+/** 사진위의 글 제목 및 본문 값*/
+.content h2 {
+    font-size: 52px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom:20px; 
+}
+
+.content p {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+}
+/** 사진 옆 칸에 색 채우기*/
+.swiper-slide #color1{
+    background-color: #333239;;
+}
+.swiper-slide #color2{
+    background-color: #155236;
+}
+.swiper-slide #color3{
+    background-color: #E4EDF3;
+}
+.swiper-slide #color4{
+    background-color: #EFE9C9;
+}
+.swiper-slide #color5{
+    background-color: #073255;
+}
+/** 사진 */
+.swiper-slide a{
+    display: block;
+    width: 83%;
+    height: 100%;
+    float: right;
+}
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+}
+/** 페이지 */
+.swiper > .swiper-pagination {
+    width: 50px;
+    padding: 5px;
+    color: white;
+    font-weight: bolder;
+    background-color: black;
+}
+/** 메인 컨텐츠*/
+.box {
+    height: 15vw;
+    float: left;
+    width: 16.66%;
+}
+
+.box:first-child {
+    background-color: #D0DEE8;
+}
+
+.box:nth-child(2) {
+    background-color:#E4EDF3;
+}
+
+.box:nth-child(3) {
+    background-color: #F2F6F9;
+}
+
+.arrow {
+    display: block;
+    height: 12px;
+    width: 40px;
+    background-image: url('../img/arrow_black.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 40px 12px;
+    margin: 30px 0;
+    
+}
+
+.box a:hover .arrow {
+    width: 60px;
+    background-image: url('../img/arrow_black.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 60px 12px;
+    transition: width 0.2s ease-in-out;
+}
+/** 이미지 넣기*/
+.box:nth-child(4) {
+    background-image: url('../img/product_oled.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.box:nth-child(5) {
+    background-image: url('../img/product_qd.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.box:nth-child(6) {
+    background-image: url('../img/product_galaxy_z_fold3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.box a {
+    padding: 15% 20% 10% 12%;
+}
+
+.box a h2 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.box a p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 2;
+}
+.center a {
+    padding: 15% 14% 45% 14%;
+}
+.center {
+    text-align: center;
+}
+
+br {
+    margin: 15px 0;
+}
+
+.center h2,
+.center p {
+    color: white;
+}
+

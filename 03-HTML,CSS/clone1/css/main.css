@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+/* 공통
+---------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+/* main 
+---------------------------------------------*/
+.main {
+  max-width: 1100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.clear:after {
+  display: block;
+  content: "";
+  float: none;
+  clear: both;
+}
+
+.main_img {
+  display: block;
+  float: left;
+  padding: 12px 24px;
+  opacity: 0.75;
+  width: 45%;
+}
+.main img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  vertical-align: center;
+}
+
+.main_text {
+  display: block;
+  padding: 12px 24px;
+  width: 45%;
+  float: left;
+}
+
+
+.main_about,
+.main_menu {
+  padding: 64px 0;
+  width: 100%;
+}
+
+.main_text h1 {
+  text-align: center;
+  letter-spacing: 5px;
+  font-size: 36px;
+}
+
+.up span {
+  background-color: #f1f1f1;
+  padding: 0 8px;
+}
+
+.up p {
+  margin: 18px 0;
+  font-size: 18px;
+}
+.up p:last-child {
+  color: #757575;
+}
+
+.up h3 {
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 5px;
+}
+
+.down h4 {
+  font-size: 20px;
+}
+.down p {
+  color: #757575;
+  margin: 15px 0;
+}
+
+/* contact 부분
+-----------------------------------------------------------*/
+
+.contact {
+  padding: 64px 16px;
+}
+
+.contact h1 {
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+.contact > .contact_p-diff {
+  margin: 18px 0;
+  font-size: 18px !important;
+  color: #607d8b;
+  font-weight: bolder;
+}
+
+.contact p {
+  margin: 15px 0;
+  font-size: 15px;
+}
+
+.contact input {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 16px 8px;
+  display: block;
+  width: 100%;
+  height: 24px;
+  font-weight: 400;
+  font: inherit;
+}
+
+.contact button {
+  border: none;
+  padding: 8px 16px;
+  font-family: "Playfair Display";
+  margin: 16px 0;
+  font-weight: 400;
+  font-size: 14px;
+  font: inherit;
+}
+
+.contact button:hover {
+  background-color: #cccccc;
+  cursor: pointer;
+}

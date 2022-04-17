@@ -1,0 +1,92 @@
+.footer {
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px 0;
+    height: 40px;
+}
+
+.footer a {
+    display: inline-block;
+}
+/** float 추가*/
+.footer_content {
+    float: left;
+}
+
+.footer_content > ul > li {
+    font-size: 11px;
+    display: inline-block;
+    padding: 10px 0;
+}
+/** | 추가*/
+.footer_content > ul > li:after {
+    content: '|';
+    margin: 0 10px;
+    font-size: 10px;
+    opacity: 0.7;
+}
+.footer_content > ul > li:last-child:after {
+    content: '';
+}
+/** float 추가*/
+.footer_url {
+    float: right;
+    margin-right: 30px;
+}
+
+.footer_url > ul > li {
+    display: inline-block;
+}
+
+.footer_url > ul > li > a {
+    height: 30px;
+    width: 30px;
+    margin: 0 5px;
+    opacity: 0.6;
+}
+
+.footer_url > ul > li:nth-child(1) a {
+    background-image: url('../img/facebook-icon.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer_url > ul > li:nth-child(2) a {
+    background-image: url('../img/youtube-icon.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer_url > ul > li:nth-child(3) a {
+    background-image: url('../img/naver-icon.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer_url > ul > li:nth-child(4) a {
+    width: 50px;
+    background-image: url('../img/logo_webwatch.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+}
+
+address {
+    float:left;
+    margin: 20px 0;
+    font-size: 11px;
+    opacity: 0.6;
+}
+
+.footer > a {
+    height: 57px;
+    width: 57px;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background-image: url('../img/btn-totop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 100;
+    background-color: rgb(125, 125, 125, 0.7);
+    display: none;
+}

@@ -1,0 +1,59 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5;
+    font-size: 15px;
+    display: block;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+b {
+    font-weight: bolder;
+}
+i {
+    font-style: italic;
+}
+
+.clear:after {
+    content: '';
+    float: none;
+    display: block;
+    clear: both;
+}
+
+.nav{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    background-color: rgba(255,255,255,0.7);
+    vertical-align: middle;
+    padding: 8px 14px;
+    z-index: 2;
+}
+
+.nav:hover {
+    background-color: #ffffff;
+}
+
+.nav_bar a {
+    text-decoration: none;
+    color: black;
+    float: left;
+    width: 24.5%;
+    padding: 8px 0;
+    white-space: normal;
+}
+
+.nav_bar a:hover {
+    background-color:  #cccccc ;
+}
+
+.nav_bar a:last-child:hover {
+    background-color: black;
+    color: white;
+}
+

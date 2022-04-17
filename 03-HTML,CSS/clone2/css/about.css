@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+.about{
+    margin-left: 15px;
+}
+
+.about_team {
+    padding: 0 8px;
+}
+
+.title p {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.team_img {
+    float:left;
+    width: 23.6%;
+    padding: 16px 8px;
+}
+
+.team_img h3 {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.team_img p {
+    font-size: 14.5px;
+}
+
+.about_img .team_img .job {
+    color: #666666;
+    padding: 8px 0 12px 0;
+}
+
+
+.team_img img {
+    width: 100%;
+}
+
+.about_img button {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 16px;
+}

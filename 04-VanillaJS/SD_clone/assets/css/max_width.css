@@ -1,0 +1,102 @@
+
+@media screen and (max-width: 1260px) {
+    .color_change{
+        background-color: #f7f7f7;
+    }
+    .menu_box {
+        position: absolute;
+        top:64px;
+        max-width: 0;
+        width: 0;
+        overflow: hidden;
+        z-index: 1000;
+        background-color: white;
+        border-top: 1px solid rgba(0,0,0,0.2);
+        height: 1492px;
+    }
+
+    .menu_box > .list_box > li > a {
+        padding: 0 50px;
+        line-height: 56px;
+        display: block;
+    }
+    
+    .sub {
+        padding: 0 30px;
+    }
+    
+    .sub > ul > li > a {
+        padding: 0 50px;
+        line-height: 40px;
+        color: rgba(0,0,0,0.7);
+        font-size: 12px;
+        display: block;
+    }
+    .sub > ul > li > a:hover {
+        color: black;
+        font-weight: bold;
+    }
+    
+    .menu_box > .list_box > li > a {
+        padding: 0 50px;
+        line-height: 56px;
+        font-weight: bolder;
+        font-size: 16px;
+        display: block;
+    }
+    
+    .none {
+        display: block;
+    }
+
+    .list_box {
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+    }
+
+    .list_box > li {
+        float: none;
+    }
+
+    .list_box:last-child{
+        border: none;
+    }
+
+    .list_box:last-child > li {
+        background: url("../img/gnb-blank-m.png") no-repeat right/auto 100%;
+    }
+
+    .color_change > a {
+        color:#162d9a;
+    }
+
+    .icon_box {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 0px;
+        z-index: 1000;
+    }
+
+    .icon_box .btn {
+        border: none;
+        height: 64px;
+        width: 64px;
+        background-image: url("../img/gnb-nav-open-ico-m.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 25px auto;
+        background-color: white;
+        cursor: pointer;
+    }
+    .icon_box .btn.active {
+        background-image: url("../img/gnb-nav-close-ico-m.png");
+    }
+
+    .icon_box .btn.active:hover {
+        background-image: url("../img/gnb-nav-close-ico-m-on.png");
+    }
+
+    .language_box {
+        display: none;
+    }
+}

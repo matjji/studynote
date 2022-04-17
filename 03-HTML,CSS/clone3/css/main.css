@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+.main {
+    max-width: 1200px;
+    margin-top: 100px;
+    margin-left:auto;
+    margin-right: auto;
+}
+/* food
+-----------------------------*/
+.food {
+    padding: 24px;
+}
+.food_list {
+    display: block;
+    width: 100%;
+    float:left;
+    margin: auto;
+}
+
+.food_list .food_item {
+    display: block;
+    width: 24.9%;
+    float: left;
+    margin-bottom: 50px;
+}
+
+.food_img {
+    padding: 0 8px;
+}
+
+.food_img img {
+    width: 100%;
+    height: auto;
+}
+
+.food_text {
+    text-align: center;
+}
+
+.food_text h3 {
+    margin-top: 2px;
+    padding: 0 8px;
+    font-size: 24px;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+/* page
+-------------------------------*/
+.page,
+.page_number {
+    text-align: center;
+    padding: 32px 0;
+    width: 100%;
+    
+}
+
+.page_number a {
+    display: inline-block;
+    margin-left: -4px;
+    text-decoration: none;
+    padding: 8px 16px;
+    white-space:normal;
+    width: auto;
+    height: auto;
+}
+
+.page_number > a:nth-child(2) {
+    background-color: black;
+    color: white;
+}
+
+.page_number > a:nth-child(2):hover {
+    background-color: #cccccc;
+    color: black;
+}
+
+.page_number > a:hover {
+    background-color: black;
+    color: white;
+}
+
+/* about
+------------------------------*/
+
+.about {
+    padding: 32px 16px;
+    text-align: center;
+}
+
+.about_text {
+    padding: 32px 0;
+}
+
+.about h4 {
+    font-size: 20px;
+}
+
+.about h6 {
+    margin: 12px 0;
+    font-size: 16px;
+}
+
+.about p {
+    padding: 0 16px;
+}
