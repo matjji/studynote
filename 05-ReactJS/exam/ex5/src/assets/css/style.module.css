@@ -1,0 +1,16 @@
+.table {
+    background-image: url("../img/45.jpeg");
+    background-size: auto 100%;
+}
+
+.thead {
+    color: #9932CC;
+}
+
+.tbody {
+    color: black;
+}
+
+.tbody tr:hover {
+    background-color: white;
+}
