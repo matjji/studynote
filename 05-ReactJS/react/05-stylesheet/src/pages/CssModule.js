@@ -12,7 +12,7 @@ const CssModule = () => {
             <div className={myStyles.myCssBox} />
 
             <h3>독립 클래스</h3>
-            <div ClassName="myBorderBox" />
+            <div className="myBorderBox" />
 
             <h3>다중 클래스 적용 (1) - 역따옴표 사용</h3>
             <div className={`${myStyles['my-size']} ${myStyles['my-bg']}`} />

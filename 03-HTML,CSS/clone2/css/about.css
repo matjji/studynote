@@ -1,21 +1,23 @@
 @charset "utf-8";
 
 .about{
-    margin-left: 15px;
+    margin-left: 30px;
 }
 
 .about_team {
     padding: 0 8px;
 }
 
-.title p {
-    font-size: 17px;
+.about > p {
+    font-size: 15px;
     font-weight: 400;
+    padding-bottom: 32px;
 }
 
 .team_img {
+    box-sizing: border-box;
     float:left;
-    width: 23.6%;
+    width: 24.9%;
     padding: 16px 8px;
 }
 

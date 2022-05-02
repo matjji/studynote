@@ -1,0 +1,25 @@
+//모듈형 Scss에서의 참조는 일반 scss와 module scss 모두 가능함
+@import './color.module.scss';
+@import './common.module.scss';
+
+.myScss {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .myScssBox {      // .myScss .myScssBox
+        cursor: pointer;
+        float: left;
+    
+        // .red 클래스가 .my-scsss-box오 함께 사용되었을 때
+        // -> .my-scss .my-scss-box.red
+    
+        &.red {background-color: $red; @include myMixin(1);}
+        &.green {background-color: $green; @include myMixin(2);}
+        &.blue {background-color: $blue; @include myMixin(3);}
+        &.orange {background-color: $orange; @include myMixin(4);}
+        &.yellow {background-color: $yellow; @include myMixin(5);}
+        &.pink {background-color: $pink; @include myMixin(6);}
+    }
+}
+

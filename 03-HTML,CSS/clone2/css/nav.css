@@ -71,11 +71,6 @@ b {
     background-color: #000000;
     text-align: center;
 }
-.footer p {
-    
-    vertical-align: middle;
-}
-
 .footer a:visited{
     color: white;
 }
