@@ -1,10 +1,10 @@
 import React from "react";
-import EventPractice from "./EventPractice";
+import Info from "./Hooks/Info";
 
 function App() {
   return (
     <div>
-      <EventPractice/>
+      <Info/>
     </div>
   );
 }

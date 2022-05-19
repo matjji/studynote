@@ -1,0 +1,163 @@
+{
+    "img": [
+        {
+        "src" : "http://www.baskinrobbins.co.kr/upload/main/1714824551.jpg",
+        "background" : "#ffd825"
+        },
+        {
+        "src" : "http://www.baskinrobbins.co.kr/upload/main/1649133684.png",
+        "background" : "#dbeffd"
+        },
+        {
+        "src" : "http://www.baskinrobbins.co.kr/upload/main/1714816944.png",
+        "background" : "#edb1ad"
+        },
+        {
+        "src" : "http://www.baskinrobbins.co.kr/upload/main/1714808856.png",
+        "background" : "#5eb640"
+        },
+        {
+        "src" : "http://www.baskinrobbins.co.kr/upload/main/1667440402.png",
+        "background" : "#f6f7f7"
+        },
+        {
+        "src" : "http://www.baskinrobbins.co.kr/upload/main/1667383155.png",
+        "background" : "#ffe103"
+        },
+        {
+        "src" : "http://www.baskinrobbins.co.kr/upload/main/1643869369.png",
+        "background" : "#fc637f"
+        },
+        {
+        "src" : "http://www.baskinrobbins.co.kr/upload/main/1664934495.png",
+        "background" : "#fff"
+        },
+        {
+        "src" : "http://www.baskinrobbins.co.kr/upload/main/1649140992.png",
+        "background" : "#060b33"
+        },
+        {
+        "src" : "http://www.baskinrobbins.co.kr/upload/main/1670146295.png",
+        "background" : "#e5e5e5"
+        },
+        {
+        "src" : "http://www.baskinrobbins.co.kr/upload/main/1667539209.png",
+        "background" : "#f16c83"
+        }
+    ],
+    "order" : [
+        {
+        "src" : "http://www.baskinrobbins.co.kr/upload/event/image/banner_delivery.png",
+        "stit" : "http://www.baskinrobbins.co.kr/assets/images/event/stit_store.gif",
+        "comment" : "해피오더 딜리버리로 간편하게 주문하세요!"
+        },
+        {
+        "src" : "http://www.baskinrobbins.co.kr/upload/event/image/banner_delivery_bm.png",
+        "stit" : "http://www.baskinrobbins.co.kr/assets/images/event/stit_store.gif",
+        "comment" : "배달의 민족에서 빠르게 주문하세요!"
+        },
+        {
+        "src" : "http://www.baskinrobbins.co.kr/upload/event/image/banner_delivery_ygy.png",
+        "stit" : "http://www.baskinrobbins.co.kr/assets/images/event/stit_store.gif",
+        "comment" : "요기요에서 손쉽게 주문하세요!"
+        },
+        {
+        "src" : "http://www.baskinrobbins.co.kr/upload/event/image/banner_delivery_kakao.png",
+        "stit" : "http://www.baskinrobbins.co.kr/assets/images/event/stit_store.gif",
+        "comment" : "카카오톡 주문하기에서 편리하게 주문하세요!"
+        },
+        {
+        "src" : "http://www.baskinrobbins.co.kr/upload/event/image/1670146074.png",
+        "stit" : "http://www.baskinrobbins.co.kr/assets/images/event/stit_online.gif",
+        "comment" : "기아 멤버스 최대 50% 제휴 혜택!"
+        },
+        {
+        "src" : "http://www.baskinrobbins.co.kr/upload/event/image/1667538956.png",
+        "stit" : "http://www.baskinrobbins.co.kr/assets/images/event/stit_online.gif",
+        "comment" : "2022 배스킨라빈스 특별한 제휴혜택"
+        },
+        {
+        "src" : "http://www.baskinrobbins.co.kr/upload/event/image/1659436130.png",
+        "stit" : "http://www.baskinrobbins.co.kr/assets/images/event/stit_store.gif",
+        "comment" : "고소한 오크밀크와 깔끔한 콜드브루의만남,콜드브루 오트라떼 출시!"
+        },
+        {
+        "src" : "http://www.baskinrobbins.co.kr/upload/event/image/1643869329.png",
+        "stit" : "http://www.baskinrobbins.co.kr/assets/images/event/stit_store.gif",
+        "comment" : "KY 멤버쉽 고객이라면 누구나 파인트 30% 할인!"
+        },
+        {
+        "src" : "http://www.baskinrobbins.co.kr/upload/event/image/1667382917.png",
+        "stit" : "http://www.baskinrobbins.co.kr/assets/images/event/stit_store.gif",
+        "comment" : "현대카드 M포인트 50% 사용"
+        },
+        {
+        "src" : "http://www.baskinrobbins.co.kr/upload/event/image/1639297260.png",
+        "stit" : "http://www.baskinrobbins.co.kr/assets/images/event/stit_store.gif",
+        "comment" : "제휴 할인 카드 혜택 안내"
+        },
+        {
+        "src" : "http://www.baskinrobbins.co.kr/upload/event/image/1570702843.png",
+        "stit" : "http://www.baskinrobbins.co.kr/assets/images/event/stit_online.gif",
+        "comment" : "2018 한글날 기념 무료 글꼴 공개! 베스킨라빈스체"
+        },
+        {
+        "src" : "http://www.baskinrobbins.co.kr/upload/event/image/1578277305.png",
+        "stit" : "http://www.baskinrobbins.co.kr/assets/images/event/stit_store.gif",
+        "comment" : "1회용 컵 사용 줄이기 안내"
+        },
+        {
+        "src" : "http://www.baskinrobbins.co.kr/upload/event/image/banner_praise_2022-1.png",
+        "stit" : "http://www.baskinrobbins.co.kr/assets/images/event/stit_store.gif",
+        "comment" : "2022년 1분기 고객 BEST 칭찬점포 안내"
+        }
+    ],
+    "insta": [
+        {
+            "src" : "https://cdn.attractt.com/contents/2021/08/04/233589038_1056915264845614_8121027646448090969_n.jpg"
+        }, 
+        {
+            "src" : "https://cdn.attractt.com/contents/2021/04/26/CazBA5EF9w2_carousel_01.jpg"
+        }, 
+        {
+            "src" : "https://cdn.attractt.com/contents/2021/04/26/CayeHqml_28_image.jpg"
+        }, 
+        {
+            "src" : "https://cdn.attractt.com/contents/2021/04/26/Capx4LMh2qR_carousel_01.jpg"
+        }, 
+        {
+            "src" : "https://cdn.attractt.com/contents/2021/04/26/CalaN6YJRJD_carousel_01.jpg"
+        }, 
+        {
+            "src" : "https://cdn.attractt.com/contents/2021/04/26/CajyHTwBUNh_image.jpg"
+        }, 
+        {
+            "src" : "https://cdn.attractt.com/contents/2021/04/26/CbIiJOZhE3s_image.jpg"
+        }, 
+        {
+            "src" : "https://cdn.attractt.com/contents/2021/04/26/CbSZp4EJn3S_image.jpg"
+        }, 
+        {
+            "src" : "https://cdn.attractt.com/contents/2021/04/26/CbSJXt8lUwZ_carousel_01.jpg"
+        }, 
+        {
+            "src" : "https://cdn.attractt.com/contents/2021/04/26/CbRnKWtpyhd_image.jpg"
+        }, 
+        {
+            "src" : "https://cdn.attractt.com/contents/2021/04/26/Cay9VWZJhOI_image.jpg"
+        }, 
+        {
+            "src" : "https://cdn.attractt.com/contents/2021/04/26/Ca1KEzirhm6_image.jpg"
+        }, 
+        {
+            "src" : "https://cdn.attractt.com/contents/2021/04/26/Cay-FJQFnhu_image.jpg"
+        }, 
+        {
+            "src" : "https://cdn.attractt.com/contents/2021/04/26/Ca0hML6BQPk_carousel_01.jpg"
+        }, 
+        {
+            "src" : "https://cdn.attractt.com/contents/2021/04/26/CazTSvIlCqQ_carousel_01.jpg"
+        } 
+    ]
+}
+
