@@ -64,9 +64,8 @@ class RegexHelper {
     compareTo(origin, compare, msg) {
         this.value(origin, msg);
         this.value(compare, msg);
-
-        var src = document.queryfield(origin).value.trim(); //원본값을 가져온다.
-        var dsc = document.queryfield(compare).value.trim(); //비교할 값을 가져온다.
+        var src = origin.value.trim(); //원본값을 가져온다.
+        var dsc = compare.value.trim(); //비교할 값을 가져온다.
         
         if (src !== dsc) {
             throw new BadRequestException(msg,origin);
@@ -81,11 +80,10 @@ class RegexHelper {
      * @param {string} msg      검사에 실패할 경우 표시할 메시지
      */
     check(field, msg) {
-        const content = document.queryfieldAll(field);
-        const checkedItem = Array.from(content).filter((v, i) => v.checked);
+        const checkedItem = Array.from(field).filter((v, i) => v.checked);
 
         if (checkedItem.length === 0) {
-            throw new BadRequestException(msg, field);
+            throw new BadRequestException(msg, field[0]);
         }
     }
 
@@ -94,8 +92,7 @@ class RegexHelper {
      * @param {string} msg      검사에 실패할 경우 표시할 메시지
     */
    checkMin(field, len, msg) {
-       const content = document.queryfieldAll(field);
-       const checkedItem = Array.from(content).filter((v, i) => v.checked);
+       const checkedItem = Array.from(field).filter((v, i) => v.checked);
 
        if (checkedItem.length < len) {
            throw new BadRequestException(msg, field);
@@ -107,8 +104,7 @@ class RegexHelper {
     * @param {string} msg      검사에 실패할 경우 표시할 메시지
     */
    checkMax(field, len, msg) {
-       const content = document.queryfieldAll(field);
-       const checkedItem = Array.from(content).filter((v, i) => v.checked);
+       const checkedItem = Array.from(field).filter((v, i) => v.checked);
 
        if (checkedItem.length > len) {
            throw new BadRequestException(msg, field);
