@@ -115,7 +115,7 @@ const ListItem = memo(({type, item: {title, contents, url, datetime, blogname, c
                     <ul>
                         {/*가격정보가 있을 경우에만 출력하는 영역 (for책검색)*/}
                         {price && <li className="price">정가: <span>{price}</span></li>}
-                        {sale_price && <li className='="price'>정가: <span>{sale_price}</span></li>}
+                        {sale_price && <li className='price'>정가: <span>{sale_price}</span></li>}
                         {authors && <li>{authors.join(",")}</li>}
                         {publisher && <li>{publisher}</li>}
                         {cafename && <li>{cafename}</li>}
