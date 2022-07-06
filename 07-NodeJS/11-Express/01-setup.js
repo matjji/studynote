@@ -4,6 +4,7 @@
 /** 직접 구현한 모듈 */
 import logger from './helper/LogHelper.js';
 import {myip, urlFormat} from './helper/UtilHelper.js';
+import {mkdirs, initMulter, checkUploadError, createThumbnail, createThumbnailMultiple} from './helper/FileHelper.js';
 /** 내장모듈 */
 import url from 'url';
 import path from 'path';
@@ -18,6 +19,8 @@ import methodOverride from 'method-override'; // PUT 파라미터 처리
 import cookieParser from 'cookie-parser'; // Cookie 처리
 import expressSession from 'express-session' // Session 처리
 import nodemailer from 'nodemailer' // 메일발송 --> app.use()로 추가설정 필요 없음.
+// import multer from 'multer'; // 업로드 모듈
+// import thumbnail from 'node-thumbnail'; // 썸네일 이미지 생성 모듈
 /*------------------------------------
 | 2) Express 객체 생성
 --------------------------------------*/
@@ -118,6 +121,10 @@ app.use(expressSession({
 // "http://아이피(혹은 도메인):포트번호" 이후의 경로가 router에 등록되지 않은 경로라면
 // static 모듈에 연결된 폴더 안에서 해당 경로를 탐색한다.
 app.use('/', serveStatic(process.env.PUBLIC_PATH));
+//업로드 된 파일이 저장될 폴더를 URL에 노출함
+app.use(process.env.UPLOAD_URL, serveStatic(process.env.UPLOAD_DIR));
+// 썸네일 이미지가 저장될 폴더를 URL에 노출함
+app.use(process.env.UPLOAD_URL, serveStatic(process.env.THUMB_DIR));
 
 /** favicon 설정 */
 app.use(serveFavicon(process.env.FAVICON_PATH))
@@ -494,6 +501,85 @@ router.post('/send_mail', async(req, res, next) => {
   }
 
   res.status(rt).send(rtMsg);
+});
+/** 07-FileUpload.js */
+// public/07_upload_single.html
+router.route('/upload/single').post((req, res, next) => {
+  // 업로드 처리시 배열로 설정
+  req.file = [];
+
+  // name속성이 myphoto인 경우에 대한 업로드를 수행 --> multer객체가 생성되고 설정 내용이 실행됨
+  // <input type="file" name="myphoto" />
+  const upload = initMulter().array('myphoto');
+
+  upload(req, res, (err) => {
+    console.group('request');
+    console.debug(req.file);
+    console.groupEnd();
+
+    // 에러여부를 확인하여 결과코드와 메시지를 생성한다.
+    const {result_code, result_msg} = checkUploadError(err);
+
+    // 업로드 결과가 성공이라면 썸네일 생성 함수를 호출한다.
+    if(result_code == 200) {
+      try {
+        createThumbnail(req.file);
+      } catch (error) {
+        console.error(error);
+        result_code = 500;
+        result_msg = '썸네일 이미지 생성에 실패했습니다.';
+      }
+    }
+
+    //업로드된 파일의 정보와 결과 코드 및 결과 메시지를 조합하여 응답정보를 구성한다.
+    const result = {
+      rt: result_code,
+      rtmsg: result_msg,
+      item: req.file,
+    };
+
+    // 준비한 결과값 변수를 활용하여 클라이언트에게 응답 보냄
+    res.status(result_code).send(result);
+  });
+});
+// public/07_upload_multi.html
+router.route('/upload/multiple').post((req, res, next) => {
+  // 업로드 처리시 배열로 설정
+  req.file = [];
+
+  // name속성이 myphoto인 경우에 대한 업로드를 수행 --> multer객체가 생성되고 설정 내용이 실행됨
+  // <input type="file" name="myphoto" />
+  const upload = initMulter().array('myphoto');
+
+  upload(req, res, (err) => {
+      console.group('request');
+      console.debug(req.file);
+      console.groupEnd();
+
+      // 에러여부를 확인하여 결과코드와 메지시를 생성한다.
+      let {result_code, result_msg} = checkUploadError(err);
+
+      // 업로드 결과가 성공이라면 썸네일 생성 함수를 호출한다.
+      if (result_code == 200) {
+          try {
+              createThumbnailMultiple(req.file);
+          } catch (error) {
+              console.error(error);
+              result_code = 500;
+              result_msg = '썸네일 이미지 생성에 실패했습니다.';
+          }
+      }
+
+      // 업로드된 파일의 정보와 결과 코드 및 결과 메시지를 조합하여 응답정보를 구성한다.
+      const result = {
+          rt: result_code,
+          rtmsg: result_msg,
+          item: req.file,
+      };
+
+      // 준비한 결과값 변수를 활용하여 클라이언트에게 응답을 보냄
+      res.status(result_code).send(result);
+  });
 });
 /*------------------------------------
 | 6) 설정한 내용을 기반으로 서버 구동 시작
