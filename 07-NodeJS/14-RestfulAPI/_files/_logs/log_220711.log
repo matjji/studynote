@@ -1,0 +1,1229 @@
+22/07/11 10:32:40 214 [debug]: -------------------------------------
+22/07/11 10:32:40 216 [debug]: |       Start Express Server        |
+22/07/11 10:32:40 217 [debug]: -------------------------------------
+22/07/11 10:32:40 218 [debug]: server address => http://192.168.35.6:3200
+22/07/11 10:32:40 218 [debug]: -------------------------------------
+22/07/11 10:49:34 690 [debug]: -------------------------------------
+22/07/11 10:49:34 692 [debug]: |       Start Express Server        |
+22/07/11 10:49:34 692 [debug]: -------------------------------------
+22/07/11 10:49:34 693 [debug]: server address => http://192.168.35.6:3200
+22/07/11 10:49:34 694 [debug]: -------------------------------------
+22/07/11 10:53:38 667 [debug]: 클라이언트가 접속했습니다.
+22/07/11 10:53:38 668 [debug]: [client] ::ffff:192.168.35.6 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 10:53:38 671 [debug]: [GET] http://192.168.35.6:3200/department
+22/07/11 10:53:38 676 [debug]: [HTTP %s Params] %s=%s
+22/07/11 10:53:38 677 [debug]: [HTTP %s Params] %s=%s
+22/07/11 10:53:38 678 [debug]: [HTTP %s Params] %s=%s
+22/07/11 10:53:38 707 [info]:  >> DATABASE 접속됨 [threadId=195]
+22/07/11 10:53:38 707 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 10:53:38 711 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/11 10:53:38 713 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 10:53:38 713 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 10:53:38 715 [debug]: SELECT deptno, dname, loc FROM department         ORDER BY deptno DESC     LIMIT 0, 10
+22/07/11 10:53:38 716 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 10:53:38 719 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 51ms
+22/07/11 10:53:38 720 [debug]: ------------------------------------------------------
+22/07/11 10:57:04 377 [debug]: 클라이언트가 접속했습니다.
+22/07/11 10:57:04 377 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 10:57:04 379 [debug]: [GET] http://localhost:3200/department
+22/07/11 10:57:04 381 [debug]: [HTTP %s Params] %s=%s
+22/07/11 10:57:04 382 [debug]: [HTTP %s Params] %s=%s
+22/07/11 10:57:04 382 [debug]: [HTTP %s Params] %s=%s
+22/07/11 10:57:04 383 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 10:57:04 384 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/11 10:57:04 385 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 10:57:04 385 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 10:57:04 386 [debug]: SELECT deptno, dname, loc FROM department         ORDER BY deptno DESC     LIMIT 0, 10
+22/07/11 10:57:04 387 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 10:57:04 387 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
+22/07/11 10:57:04 387 [debug]: ------------------------------------------------------
+22/07/11 10:57:04 389 [debug]: 클라이언트가 접속했습니다.
+22/07/11 10:57:04 390 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 10:57:04 391 [debug]: [GET] http://localhost:3200/department
+22/07/11 10:57:04 392 [debug]: [HTTP %s Params] %s=%s
+22/07/11 10:57:04 392 [debug]: [HTTP %s Params] %s=%s
+22/07/11 10:57:04 393 [debug]: [HTTP %s Params] %s=%s
+22/07/11 10:57:04 393 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 10:57:04 394 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/11 10:57:04 395 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 10:57:04 395 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 10:57:04 396 [debug]: SELECT deptno, dname, loc FROM department         ORDER BY deptno DESC     LIMIT 0, 10
+22/07/11 10:57:04 399 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 10:57:04 400 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
+22/07/11 10:57:04 401 [debug]: ------------------------------------------------------
+22/07/11 12:34:37 305 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:34:37 306 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:34:37 307 [debug]: [GET] http://localhost:3200/department?query=공학&page=2&rows=5
+22/07/11 12:34:37 307 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:34:37 308 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:34:37 308 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:34:37 308 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 12:34:37 309 [debug]: SELECT COUNT(*) AS cnt FROM department   WHERE     dname LIKE concat('%', '공학', '%')    OR loc LIKE concat('%', '공학', '%')
+22/07/11 12:34:37 310 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 12:34:37 310 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 12:34:37 311 [debug]: SELECT deptno, dname, loc FROM department    WHERE     dname LIKE concat('%', '공학', '%')    OR loc LIKE concat('%', '공학', '%')     ORDER BY deptno DESC     LIMIT 5, 5
+22/07/11 12:34:37 312 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 12:34:37 313 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+22/07/11 12:34:37 313 [debug]: ------------------------------------------------------
+22/07/11 12:34:37 314 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:34:37 315 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:34:37 315 [debug]: [GET] http://localhost:3200/department?query=공학&page=2&rows=5
+22/07/11 12:34:37 316 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:34:37 316 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:34:37 316 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:34:37 317 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 12:34:37 318 [debug]: SELECT COUNT(*) AS cnt FROM department   WHERE     dname LIKE concat('%', '공학', '%')    OR loc LIKE concat('%', '공학', '%')
+22/07/11 12:34:37 318 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 12:34:37 319 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 12:34:37 319 [debug]: SELECT deptno, dname, loc FROM department    WHERE     dname LIKE concat('%', '공학', '%')    OR loc LIKE concat('%', '공학', '%')     ORDER BY deptno DESC     LIMIT 5, 5
+22/07/11 12:34:37 320 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 12:34:37 321 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+22/07/11 12:34:37 322 [debug]: ------------------------------------------------------
+22/07/11 12:34:51 610 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:34:51 611 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:34:51 611 [debug]: [GET] http://localhost:3200/department?query=공학&page=2&rows=6
+22/07/11 12:34:51 612 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:34:51 612 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:34:51 612 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:34:51 613 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 12:34:51 613 [debug]: SELECT COUNT(*) AS cnt FROM department   WHERE     dname LIKE concat('%', '공학', '%')    OR loc LIKE concat('%', '공학', '%')
+22/07/11 12:34:51 614 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 12:34:51 614 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 12:34:51 614 [debug]: SELECT deptno, dname, loc FROM department    WHERE     dname LIKE concat('%', '공학', '%')    OR loc LIKE concat('%', '공학', '%')     ORDER BY deptno DESC     LIMIT 6, 6
+22/07/11 12:34:51 615 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 12:34:51 615 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+22/07/11 12:34:51 615 [debug]: ------------------------------------------------------
+22/07/11 12:34:59 138 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:34:59 139 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:34:59 139 [debug]: [GET] http://localhost:3200/department?query=공학&page=2&rows=6
+22/07/11 12:34:59 141 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:34:59 141 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:34:59 141 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:34:59 142 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 12:34:59 143 [debug]: SELECT COUNT(*) AS cnt FROM department   WHERE     dname LIKE concat('%', '공학', '%')    OR loc LIKE concat('%', '공학', '%')
+22/07/11 12:34:59 144 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 12:34:59 144 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 12:34:59 144 [debug]: SELECT deptno, dname, loc FROM department    WHERE     dname LIKE concat('%', '공학', '%')    OR loc LIKE concat('%', '공학', '%')     ORDER BY deptno DESC     LIMIT 6, 6
+22/07/11 12:34:59 145 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 12:34:59 146 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+22/07/11 12:34:59 146 [debug]: ------------------------------------------------------
+22/07/11 12:34:59 147 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:34:59 147 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:34:59 147 [debug]: [GET] http://localhost:3200/department?query=공학&page=2&rows=6
+22/07/11 12:34:59 148 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:34:59 148 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:34:59 149 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:34:59 149 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 12:34:59 150 [debug]: SELECT COUNT(*) AS cnt FROM department   WHERE     dname LIKE concat('%', '공학', '%')    OR loc LIKE concat('%', '공학', '%')
+22/07/11 12:34:59 150 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 12:34:59 151 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 12:34:59 152 [debug]: SELECT deptno, dname, loc FROM department    WHERE     dname LIKE concat('%', '공학', '%')    OR loc LIKE concat('%', '공학', '%')     ORDER BY deptno DESC     LIMIT 6, 6
+22/07/11 12:34:59 153 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 12:34:59 153 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+22/07/11 12:34:59 154 [debug]: ------------------------------------------------------
+22/07/11 12:35:03 398 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:35:03 398 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:35:03 399 [debug]: [GET] http://localhost:3200/department?query=공학&page=2&rows=1
+22/07/11 12:35:03 400 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:35:03 400 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:35:03 401 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:35:03 401 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 12:35:03 402 [debug]: SELECT COUNT(*) AS cnt FROM department   WHERE     dname LIKE concat('%', '공학', '%')    OR loc LIKE concat('%', '공학', '%')
+22/07/11 12:35:03 402 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 12:35:03 402 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 12:35:03 403 [debug]: SELECT deptno, dname, loc FROM department    WHERE     dname LIKE concat('%', '공학', '%')    OR loc LIKE concat('%', '공학', '%')     ORDER BY deptno DESC     LIMIT 1, 1
+22/07/11 12:35:03 403 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 12:35:03 404 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+22/07/11 12:35:03 404 [debug]: ------------------------------------------------------
+22/07/11 12:35:06 683 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:35:06 683 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:35:06 684 [debug]: [GET] http://localhost:3200/department?query=공학&page=2&rows=2
+22/07/11 12:35:06 684 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:35:06 685 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:35:06 685 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:35:06 685 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 12:35:06 686 [debug]: SELECT COUNT(*) AS cnt FROM department   WHERE     dname LIKE concat('%', '공학', '%')    OR loc LIKE concat('%', '공학', '%')
+22/07/11 12:35:06 686 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 12:35:06 686 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 12:35:06 687 [debug]: SELECT deptno, dname, loc FROM department    WHERE     dname LIKE concat('%', '공학', '%')    OR loc LIKE concat('%', '공학', '%')     ORDER BY deptno DESC     LIMIT 2, 2
+22/07/11 12:35:06 687 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 12:35:06 688 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+22/07/11 12:35:06 688 [debug]: ------------------------------------------------------
+22/07/11 12:35:09 332 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:35:09 332 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:35:09 333 [debug]: [GET] http://localhost:3200/department?query=공학&page=2&rows=6
+22/07/11 12:35:09 334 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:35:09 334 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:35:09 334 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:35:09 334 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 12:35:09 335 [debug]: SELECT COUNT(*) AS cnt FROM department   WHERE     dname LIKE concat('%', '공학', '%')    OR loc LIKE concat('%', '공학', '%')
+22/07/11 12:35:09 335 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 12:35:09 335 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 12:35:09 336 [debug]: SELECT deptno, dname, loc FROM department    WHERE     dname LIKE concat('%', '공학', '%')    OR loc LIKE concat('%', '공학', '%')     ORDER BY deptno DESC     LIMIT 6, 6
+22/07/11 12:35:09 337 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 12:35:09 337 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+22/07/11 12:35:09 338 [debug]: ------------------------------------------------------
+22/07/11 12:35:13 371 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:35:13 371 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:35:13 372 [debug]: [GET] http://localhost:3200/department?query=공학&page=2&rows=5
+22/07/11 12:35:13 373 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:35:13 373 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:35:13 373 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:35:13 374 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 12:35:13 374 [debug]: SELECT COUNT(*) AS cnt FROM department   WHERE     dname LIKE concat('%', '공학', '%')    OR loc LIKE concat('%', '공학', '%')
+22/07/11 12:35:13 375 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 12:35:13 375 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 12:35:13 375 [debug]: SELECT deptno, dname, loc FROM department    WHERE     dname LIKE concat('%', '공학', '%')    OR loc LIKE concat('%', '공학', '%')     ORDER BY deptno DESC     LIMIT 5, 5
+22/07/11 12:35:13 376 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 12:35:13 376 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+22/07/11 12:35:13 377 [debug]: ------------------------------------------------------
+22/07/11 12:37:00 170 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:37:00 170 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:37:00 171 [debug]: [GET] http://localhost:3200/department?query=공학&page=2&rows=5
+22/07/11 12:37:00 172 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:37:00 172 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:37:00 172 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:37:00 173 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 12:37:00 173 [debug]: SELECT COUNT(*) AS cnt FROM department   WHERE     dname LIKE concat('%', '공학', '%')    OR loc LIKE concat('%', '공학', '%')
+22/07/11 12:37:00 173 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 12:37:00 174 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 12:37:00 174 [debug]: SELECT deptno, dname, loc FROM department    WHERE     dname LIKE concat('%', '공학', '%')    OR loc LIKE concat('%', '공학', '%')     ORDER BY deptno DESC     LIMIT 5, 5
+22/07/11 12:37:00 175 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 12:37:00 177 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+22/07/11 12:37:00 177 [debug]: ------------------------------------------------------
+22/07/11 12:37:00 178 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:37:00 178 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:37:00 179 [debug]: [GET] http://localhost:3200/department?query=공학&page=2&rows=5
+22/07/11 12:37:00 179 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:37:00 180 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:37:00 180 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:37:00 180 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 12:37:00 181 [debug]: SELECT COUNT(*) AS cnt FROM department   WHERE     dname LIKE concat('%', '공학', '%')    OR loc LIKE concat('%', '공학', '%')
+22/07/11 12:37:00 182 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 12:37:00 182 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 12:37:00 182 [debug]: SELECT deptno, dname, loc FROM department    WHERE     dname LIKE concat('%', '공학', '%')    OR loc LIKE concat('%', '공학', '%')     ORDER BY deptno DESC     LIMIT 5, 5
+22/07/11 12:37:00 183 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 12:37:00 184 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+22/07/11 12:37:00 184 [debug]: ------------------------------------------------------
+22/07/11 12:37:19 821 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:37:19 822 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:37:19 822 [debug]: [GET] http://localhost:3200/department?query=공학&page=2&rows=5
+22/07/11 12:37:19 823 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:37:19 824 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:37:19 824 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:37:19 824 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 12:37:19 825 [debug]: SELECT COUNT(*) AS cnt FROM department   WHERE     dname LIKE concat('%', '공학', '%')    OR loc LIKE concat('%', '공학', '%')
+22/07/11 12:37:19 826 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 12:37:19 826 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 12:37:19 826 [debug]: SELECT deptno, dname, loc FROM department    WHERE     dname LIKE concat('%', '공학', '%')    OR loc LIKE concat('%', '공학', '%')     ORDER BY deptno DESC     LIMIT 5, 5
+22/07/11 12:37:19 827 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 12:37:19 827 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+22/07/11 12:37:19 828 [debug]: ------------------------------------------------------
+22/07/11 12:37:19 828 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:37:19 829 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:37:19 829 [debug]: [GET] http://localhost:3200/department?query=공학&page=2&rows=5
+22/07/11 12:37:19 830 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:37:19 830 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:37:19 830 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:37:19 830 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 12:37:19 831 [debug]: SELECT COUNT(*) AS cnt FROM department   WHERE     dname LIKE concat('%', '공학', '%')    OR loc LIKE concat('%', '공학', '%')
+22/07/11 12:37:19 831 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 12:37:19 832 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 12:37:19 833 [debug]: SELECT deptno, dname, loc FROM department    WHERE     dname LIKE concat('%', '공학', '%')    OR loc LIKE concat('%', '공학', '%')     ORDER BY deptno DESC     LIMIT 5, 5
+22/07/11 12:37:19 834 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 12:37:19 834 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+22/07/11 12:37:19 835 [debug]: ------------------------------------------------------
+22/07/11 12:37:38 717 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:37:38 717 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:37:38 718 [debug]: [GET] http://localhost:3200/department?query=공학&page=2&rows=5
+22/07/11 12:37:38 719 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:37:38 720 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:37:38 720 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:37:38 720 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 12:37:38 721 [debug]: SELECT COUNT(*) AS cnt FROM department   WHERE     dname LIKE concat('%', '공학', '%')    OR loc LIKE concat('%', '공학', '%')
+22/07/11 12:37:38 721 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 12:37:38 721 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 12:37:38 722 [debug]: SELECT deptno, dname, loc FROM department    WHERE     dname LIKE concat('%', '공학', '%')    OR loc LIKE concat('%', '공학', '%')     ORDER BY deptno DESC     LIMIT 5, 5
+22/07/11 12:37:38 722 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 12:37:38 723 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+22/07/11 12:37:38 723 [debug]: ------------------------------------------------------
+22/07/11 12:37:38 724 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:37:38 724 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:37:38 724 [debug]: [GET] http://localhost:3200/department?query=공학&page=2&rows=5
+22/07/11 12:37:38 725 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:37:38 726 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:37:38 726 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:37:38 726 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 12:37:38 727 [debug]: SELECT COUNT(*) AS cnt FROM department   WHERE     dname LIKE concat('%', '공학', '%')    OR loc LIKE concat('%', '공학', '%')
+22/07/11 12:37:38 727 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 12:37:38 727 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 12:37:38 728 [debug]: SELECT deptno, dname, loc FROM department    WHERE     dname LIKE concat('%', '공학', '%')    OR loc LIKE concat('%', '공학', '%')     ORDER BY deptno DESC     LIMIT 5, 5
+22/07/11 12:37:38 728 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 12:37:38 729 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+22/07/11 12:37:38 729 [debug]: ------------------------------------------------------
+22/07/11 12:38:02 155 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:38:02 155 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:38:02 156 [debug]: [GET] http://localhost:3200/department/undefined
+22/07/11 12:38:02 158 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:38:02 159 [error]: [Error] 학과번호가 잘못되었습니다.
+22/07/11 12:38:02 159 [error]: Error: 학과번호가 잘못되었습니다.
+    at RegexHelper.field (file:///C:/Users/Sin_jisup/studynote/07-NodeJS/14-RestfulAPI/helper/RegexHelper.js:122:18)
+    at RegexHelper.num (file:///C:/Users/Sin_jisup/studynote/07-NodeJS/14-RestfulAPI/helper/RegexHelper.js:133:20)
+    at file:///C:/Users/Sin_jisup/studynote/07-NodeJS/14-RestfulAPI/controllers/DepartmentController.js:54:19
+    at Layer.handle [as handle_request] (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:376:14)
+22/07/11 12:38:02 160 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+22/07/11 12:38:02 160 [debug]: ------------------------------------------------------
+22/07/11 12:38:30 973 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:38:30 974 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:38:30 974 [debug]: [GET] http://localhost:3200/department/221
+22/07/11 12:38:30 975 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:38:30 975 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 12:38:30 976 [debug]: SELECT deptno, dname, loc FROM department WHERE deptno='221';
+22/07/11 12:38:30 976 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 12:38:30 977 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+22/07/11 12:38:30 977 [debug]: ------------------------------------------------------
+22/07/11 12:41:30 691 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:41:30 691 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:41:30 692 [debug]: [GET] http://localhost:3200/department/221
+22/07/11 12:41:30 693 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:41:30 693 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 12:41:30 694 [debug]: SELECT deptno, dname, loc FROM department WHERE deptno='221';
+22/07/11 12:41:30 694 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 12:41:30 695 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+22/07/11 12:41:30 695 [debug]: ------------------------------------------------------
+22/07/11 12:41:30 696 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:41:30 696 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:41:30 696 [debug]: [GET] http://localhost:3200/department/221
+22/07/11 12:41:30 697 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:41:30 698 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 12:41:30 698 [debug]: SELECT deptno, dname, loc FROM department WHERE deptno='221';
+22/07/11 12:41:30 699 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 12:41:30 700 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+22/07/11 12:41:30 700 [debug]: ------------------------------------------------------
+22/07/11 12:45:44 468 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:45:44 468 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:45:44 469 [debug]: [GET] http://localhost:3200/department/221
+22/07/11 12:45:44 470 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:45:44 470 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 12:45:44 471 [debug]: SELECT deptno, dname, loc FROM department WHERE deptno='221';
+22/07/11 12:45:44 471 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 12:45:44 472 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+22/07/11 12:45:44 472 [debug]: ------------------------------------------------------
+22/07/11 12:45:44 473 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:45:44 473 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:45:44 474 [debug]: [GET] http://localhost:3200/department/221
+22/07/11 12:45:44 475 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:45:44 475 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 12:45:44 475 [debug]: SELECT deptno, dname, loc FROM department WHERE deptno='221';
+22/07/11 12:45:44 476 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 12:45:44 476 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+22/07/11 12:45:44 476 [debug]: ------------------------------------------------------
+22/07/11 12:46:37 435 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:46:37 435 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:46:37 436 [debug]: [OPTIONS] http://localhost:3200/department
+22/07/11 12:46:37 436 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 1ms
+22/07/11 12:46:37 437 [debug]: ------------------------------------------------------
+22/07/11 12:46:37 437 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:46:37 437 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:46:37 438 [debug]: [POST] http://localhost:3200/department
+22/07/11 12:46:37 449 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:46:37 449 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:46:37 450 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 12:46:37 450 [debug]: INSERT INTO department (dname, loc) VALUES ('놀기학과', '어디든지');
+22/07/11 12:46:37 452 [debug]: SELECT deptno, dname, loc FROM department WHERE deptno='232';
+22/07/11 12:46:37 453 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 12:46:37 453 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 16ms
+22/07/11 12:46:37 453 [debug]: ------------------------------------------------------
+22/07/11 12:47:55 622 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:47:55 622 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:47:55 623 [debug]: [OPTIONS] http://localhost:3200/department
+22/07/11 12:47:55 623 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 1ms
+22/07/11 12:47:55 623 [debug]: ------------------------------------------------------
+22/07/11 12:47:55 624 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:47:55 624 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:47:55 625 [debug]: [POST] http://localhost:3200/department
+22/07/11 12:47:55 625 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:47:55 626 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:47:55 626 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 12:47:55 626 [debug]: INSERT INTO department (dname, loc) VALUES ('놀기학과', '어디든지');
+22/07/11 12:47:55 627 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:47:55 627 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:47:55 627 [debug]: [OPTIONS] http://localhost:3200/department
+22/07/11 12:47:55 628 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 1ms
+22/07/11 12:47:55 628 [debug]: ------------------------------------------------------
+22/07/11 12:47:55 628 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:47:55 629 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:47:55 629 [debug]: [POST] http://localhost:3200/department
+22/07/11 12:47:55 630 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:47:55 630 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:47:55 631 [debug]: SELECT deptno, dname, loc FROM department WHERE deptno='233';
+22/07/11 12:47:55 632 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 12:47:55 632 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 8ms
+22/07/11 12:47:55 632 [debug]: ------------------------------------------------------
+22/07/11 12:47:55 634 [info]:  >> DATABASE 접속됨 [threadId=196]
+22/07/11 12:47:55 634 [info]:  >> Connection 임대됨 [threadId=196]
+22/07/11 12:47:55 635 [debug]: INSERT INTO department (dname, loc) VALUES ('놀기학과', '어디든지');
+22/07/11 12:47:55 636 [debug]: SELECT deptno, dname, loc FROM department WHERE deptno='234';
+22/07/11 12:47:55 636 [info]:  >> Connection 반납됨 [threadId=196]
+22/07/11 12:47:55 637 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 8ms
+22/07/11 12:47:55 637 [debug]: ------------------------------------------------------
+22/07/11 12:48:59 312 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:48:59 313 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:48:59 313 [debug]: [OPTIONS] http://localhost:3200/department
+22/07/11 12:48:59 314 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 1ms
+22/07/11 12:48:59 314 [debug]: ------------------------------------------------------
+22/07/11 12:48:59 315 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:48:59 315 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:48:59 316 [debug]: [OPTIONS] http://localhost:3200/department
+22/07/11 12:48:59 316 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 1ms
+22/07/11 12:48:59 316 [debug]: ------------------------------------------------------
+22/07/11 12:48:59 317 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:48:59 318 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:48:59 318 [debug]: [POST] http://localhost:3200/department
+22/07/11 12:48:59 319 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:48:59 319 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:48:59 320 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 12:48:59 320 [debug]: INSERT INTO department (dname, loc) VALUES ('놀기학과', '어디든지');
+22/07/11 12:48:59 321 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:48:59 321 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:48:59 321 [debug]: [POST] http://localhost:3200/department
+22/07/11 12:48:59 322 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:48:59 323 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:48:59 323 [info]:  >> Connection 임대됨 [threadId=196]
+22/07/11 12:48:59 323 [debug]: INSERT INTO department (dname, loc) VALUES ('놀기학과', '어디든지');
+22/07/11 12:48:59 324 [debug]: SELECT deptno, dname, loc FROM department WHERE deptno='235';
+22/07/11 12:48:59 324 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 12:48:59 325 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+22/07/11 12:48:59 325 [debug]: ------------------------------------------------------
+22/07/11 12:48:59 325 [debug]: SELECT deptno, dname, loc FROM department WHERE deptno='236';
+22/07/11 12:48:59 326 [info]:  >> Connection 반납됨 [threadId=196]
+22/07/11 12:48:59 326 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+22/07/11 12:48:59 326 [debug]: ------------------------------------------------------
+22/07/11 12:51:41 621 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:51:41 622 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:51:41 622 [debug]: [OPTIONS] http://localhost:3200/department/236
+22/07/11 12:51:41 623 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 1ms
+22/07/11 12:51:41 623 [debug]: ------------------------------------------------------
+22/07/11 12:51:41 623 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:51:41 623 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:51:41 624 [debug]: [POST] http://localhost:3200/department/236
+22/07/11 12:51:41 625 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/11 12:51:41 625 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///C:/Users/Sin_jisup/studynote/07-NodeJS/14-RestfulAPI/app.js:168:48
+    at Layer.handle [as handle_request] (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:286:9
+    at param (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:328:13)
+22/07/11 12:51:41 626 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+22/07/11 12:51:41 626 [debug]: ------------------------------------------------------
+22/07/11 12:52:00 217 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:52:00 217 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:52:00 218 [debug]: [OPTIONS] http://localhost:3200/department/236
+22/07/11 12:52:00 219 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+22/07/11 12:52:00 219 [debug]: ------------------------------------------------------
+22/07/11 12:52:00 219 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:52:00 220 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:52:00 220 [debug]: [POST] http://localhost:3200/department/236
+22/07/11 12:52:00 221 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/11 12:52:00 221 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///C:/Users/Sin_jisup/studynote/07-NodeJS/14-RestfulAPI/app.js:168:48
+    at Layer.handle [as handle_request] (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:286:9
+    at param (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:328:13)
+22/07/11 12:52:00 222 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+22/07/11 12:52:00 222 [debug]: ------------------------------------------------------
+22/07/11 12:52:00 223 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:52:00 223 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:52:00 223 [debug]: [OPTIONS] http://localhost:3200/department/236
+22/07/11 12:52:00 224 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 1ms
+22/07/11 12:52:00 224 [debug]: ------------------------------------------------------
+22/07/11 12:52:00 225 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:52:00 225 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:52:00 225 [debug]: [POST] http://localhost:3200/department/236
+22/07/11 12:52:00 226 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/11 12:52:00 226 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///C:/Users/Sin_jisup/studynote/07-NodeJS/14-RestfulAPI/app.js:168:48
+    at Layer.handle [as handle_request] (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:286:9
+    at param (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:328:13)
+22/07/11 12:52:00 227 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+22/07/11 12:52:00 227 [debug]: ------------------------------------------------------
+22/07/11 12:52:43 037 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:52:43 037 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:52:43 039 [debug]: [OPTIONS] http://localhost:3200/department/236
+22/07/11 12:52:43 040 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+22/07/11 12:52:43 040 [debug]: ------------------------------------------------------
+22/07/11 12:52:43 041 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:52:43 041 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:52:43 042 [debug]: [POST] http://localhost:3200/department/236
+22/07/11 12:52:43 043 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/11 12:52:43 043 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///C:/Users/Sin_jisup/studynote/07-NodeJS/14-RestfulAPI/app.js:168:48
+    at Layer.handle [as handle_request] (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:286:9
+    at param (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:328:13)
+22/07/11 12:52:43 045 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+22/07/11 12:52:43 045 [debug]: ------------------------------------------------------
+22/07/11 12:52:43 046 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:52:43 046 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:52:43 047 [debug]: [OPTIONS] http://localhost:3200/department/236
+22/07/11 12:52:43 049 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+22/07/11 12:52:43 049 [debug]: ------------------------------------------------------
+22/07/11 12:52:43 051 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:52:43 051 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:52:43 052 [debug]: [POST] http://localhost:3200/department/236
+22/07/11 12:52:43 053 [error]: [Error] 페이지를 찾을 수 없습니다.
+22/07/11 12:52:43 054 [error]: Error: 페이지를 찾을 수 없습니다.
+    at file:///C:/Users/Sin_jisup/studynote/07-NodeJS/14-RestfulAPI/app.js:168:48
+    at Layer.handle [as handle_request] (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:286:9
+    at param (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:280:10)
+    at Layer.handle [as handle_request] (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\layer.js:91:12)
+    at trim_prefix (C:\Users\Sin_jisup\studynote\07-NodeJS\14-RestfulAPI\node_modules\express\lib\router\index.js:328:13)
+22/07/11 12:52:43 055 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+22/07/11 12:52:43 055 [debug]: ------------------------------------------------------
+22/07/11 12:53:40 108 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:53:40 109 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:53:40 110 [debug]: [OPTIONS] http://localhost:3200/department/236
+22/07/11 12:53:40 112 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 3ms
+22/07/11 12:53:40 112 [debug]: ------------------------------------------------------
+22/07/11 12:53:40 113 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:53:40 113 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:53:40 114 [debug]: [PUT] http://localhost:3200/department/236
+22/07/11 12:53:40 115 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:53:40 115 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:53:40 116 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:53:40 117 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 12:53:40 117 [debug]: UPDATE department SET dname='놀기학과수정', loc='몰라어디든지'  WHERE deptno='236';
+22/07/11 12:53:40 118 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:53:40 119 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:53:40 120 [debug]: [OPTIONS] http://localhost:3200/department/236
+22/07/11 12:53:40 121 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+22/07/11 12:53:40 121 [debug]: ------------------------------------------------------
+22/07/11 12:53:40 122 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:53:40 122 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:53:40 123 [debug]: [PUT] http://localhost:3200/department/236
+22/07/11 12:53:40 123 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:53:40 124 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:53:40 124 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:53:40 125 [info]:  >> Connection 임대됨 [threadId=196]
+22/07/11 12:53:40 125 [debug]: UPDATE department SET dname='놀기학과수정', loc='몰라어디든지'  WHERE deptno='236';
+22/07/11 12:53:40 129 [debug]: SELECT deptno, dname, loc FROM department WHERE deptno='236';
+22/07/11 12:53:40 129 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 12:53:40 130 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 17ms
+22/07/11 12:53:40 130 [debug]: ------------------------------------------------------
+22/07/11 12:53:40 131 [debug]: SELECT deptno, dname, loc FROM department WHERE deptno='236';
+22/07/11 12:53:40 132 [info]:  >> Connection 반납됨 [threadId=196]
+22/07/11 12:53:40 132 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
+22/07/11 12:53:40 133 [debug]: ------------------------------------------------------
+22/07/11 12:54:36 767 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:54:36 768 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:54:36 771 [debug]: [OPTIONS] http://localhost:3200/department/236
+22/07/11 12:54:36 772 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+22/07/11 12:54:36 773 [debug]: ------------------------------------------------------
+22/07/11 12:54:36 773 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:54:36 774 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:54:36 774 [debug]: [PUT] http://localhost:3200/department/236
+22/07/11 12:54:36 775 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:54:36 776 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:54:36 777 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:54:36 778 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 12:54:36 779 [debug]: UPDATE department SET dname='놀기학과수정', loc='몰라어디든지'  WHERE deptno='236';
+22/07/11 12:54:36 780 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:54:36 780 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:54:36 780 [debug]: [OPTIONS] http://localhost:3200/department/236
+22/07/11 12:54:36 781 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 1ms
+22/07/11 12:54:36 781 [debug]: ------------------------------------------------------
+22/07/11 12:54:36 782 [debug]: SELECT deptno, dname, loc FROM department WHERE deptno='236';
+22/07/11 12:54:36 783 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:54:36 783 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:54:36 784 [debug]: [PUT] http://localhost:3200/department/236
+22/07/11 12:54:36 787 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:54:36 788 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:54:36 788 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:54:36 789 [info]:  >> Connection 임대됨 [threadId=196]
+22/07/11 12:54:36 789 [debug]: UPDATE department SET dname='놀기학과수정', loc='몰라어디든지'  WHERE deptno='236';
+22/07/11 12:54:36 790 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 12:54:36 791 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 17ms
+22/07/11 12:54:36 791 [debug]: ------------------------------------------------------
+22/07/11 12:54:36 792 [debug]: SELECT deptno, dname, loc FROM department WHERE deptno='236';
+22/07/11 12:54:36 793 [info]:  >> Connection 반납됨 [threadId=196]
+22/07/11 12:54:36 794 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
+22/07/11 12:54:36 794 [debug]: ------------------------------------------------------
+22/07/11 12:55:03 788 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:55:03 789 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:55:03 790 [debug]: [OPTIONS] http://localhost:3200/department/236
+22/07/11 12:55:03 791 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 2ms
+22/07/11 12:55:03 792 [debug]: ------------------------------------------------------
+22/07/11 12:55:03 793 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:55:03 793 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:55:03 794 [debug]: [DELETE] http://localhost:3200/department/236
+22/07/11 12:55:03 795 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:55:03 796 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 12:55:03 796 [debug]: DELETE FROM student WHERE deptno='236';
+22/07/11 12:55:03 797 [debug]: DELETE FROM professor WHERE deptno='236';
+22/07/11 12:55:03 797 [debug]: DELETE FROM department WHERE deptno='236';
+22/07/11 12:55:03 799 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 12:55:03 800 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+22/07/11 12:55:03 800 [debug]: ------------------------------------------------------
+22/07/11 12:55:19 758 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:55:19 758 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:55:19 759 [debug]: [GET] http://localhost:3200/department/236
+22/07/11 12:55:19 761 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:55:19 761 [info]:  >> Connection 임대됨 [threadId=196]
+22/07/11 12:55:19 762 [debug]: SELECT deptno, dname, loc FROM department WHERE deptno='236';
+22/07/11 12:55:19 762 [info]:  >> Connection 반납됨 [threadId=196]
+22/07/11 12:55:19 763 [error]: [Error] 조회된 데이터가 없습니다.
+22/07/11 12:55:19 763 [error]: Error: 조회된 데이터가 없습니다.
+    at DepartmentService.getItem (file:///C:/Users/Sin_jisup/studynote/07-NodeJS/14-RestfulAPI/services/DepartmentService.js:53:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async file:///C:/Users/Sin_jisup/studynote/07-NodeJS/14-RestfulAPI/controllers/DepartmentController.js:62:14
+22/07/11 12:55:19 764 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+22/07/11 12:55:19 764 [debug]: ------------------------------------------------------
+22/07/11 12:55:24 113 [debug]: 클라이언트가 접속했습니다.
+22/07/11 12:55:24 114 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 12:55:24 115 [debug]: [GET] http://localhost:3200/department/221
+22/07/11 12:55:24 116 [debug]: [HTTP %s Params] %s=%s
+22/07/11 12:55:24 116 [info]:  >> Connection 임대됨 [threadId=195]
+22/07/11 12:55:24 117 [debug]: SELECT deptno, dname, loc FROM department WHERE deptno='221';
+22/07/11 12:55:24 118 [info]:  >> Connection 반납됨 [threadId=195]
+22/07/11 12:55:24 119 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+22/07/11 12:55:24 119 [debug]: ------------------------------------------------------
+22/07/11 12:57:49 355 [info]: -------- Server is close ------
+22/07/11 16:23:08 690 [debug]: -------------------------------------
+22/07/11 16:23:08 692 [debug]: |       Start Express Server        |
+22/07/11 16:23:08 693 [debug]: -------------------------------------
+22/07/11 16:23:08 693 [debug]: server address => http://192.168.35.6:3200
+22/07/11 16:23:08 693 [debug]: -------------------------------------
+22/07/11 16:25:36 506 [debug]: 클라이언트가 접속했습니다.
+22/07/11 16:25:36 507 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 16:25:36 508 [debug]: [GET] http://localhost:3200/department?query=공학&page=2&rows=5
+22/07/11 16:25:36 512 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:25:36 513 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:25:36 514 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:25:36 551 [info]:  >> DATABASE 접속됨 [threadId=197]
+22/07/11 16:25:36 553 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 16:25:36 557 [debug]: SELECT COUNT(*) AS cnt FROM department   WHERE     dname LIKE concat('%', '공학', '%')    OR loc LIKE concat('%', '공학', '%')
+22/07/11 16:25:36 560 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 16:25:36 561 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 16:25:36 563 [debug]: SELECT deptno, dname, loc FROM department    WHERE     dname LIKE concat('%', '공학', '%')    OR loc LIKE concat('%', '공학', '%')     ORDER BY deptno DESC     LIMIT 5, 5
+22/07/11 16:25:36 564 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 16:25:36 569 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 62ms
+22/07/11 16:25:36 570 [debug]: ------------------------------------------------------
+22/07/11 16:40:56 500 [debug]: 클라이언트가 접속했습니다.
+22/07/11 16:40:56 501 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 16:40:56 503 [debug]: [GET] http://localhost:3200/department
+22/07/11 16:40:56 504 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:40:56 505 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:40:56 506 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:40:56 507 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 16:40:56 508 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/11 16:40:56 509 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 16:40:56 509 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 16:40:56 510 [debug]: SELECT deptno, dname, loc FROM department         ORDER BY deptno DESC     LIMIT 0, 10
+22/07/11 16:40:56 511 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 16:40:56 512 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
+22/07/11 16:40:56 513 [debug]: ------------------------------------------------------
+22/07/11 16:40:56 515 [debug]: 클라이언트가 접속했습니다.
+22/07/11 16:40:56 515 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 16:40:56 516 [debug]: [GET] http://localhost:3200/department
+22/07/11 16:40:56 517 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:40:56 517 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:40:56 518 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:40:56 518 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 16:40:56 519 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/11 16:40:56 520 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 16:40:56 522 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 16:40:56 524 [debug]: SELECT deptno, dname, loc FROM department         ORDER BY deptno DESC     LIMIT 0, 10
+22/07/11 16:40:56 524 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 16:40:56 525 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
+22/07/11 16:40:56 525 [debug]: ------------------------------------------------------
+22/07/11 16:40:59 590 [debug]: 클라이언트가 접속했습니다.
+22/07/11 16:40:59 590 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 16:40:59 591 [debug]: [GET] http://localhost:3200/department
+22/07/11 16:40:59 593 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:40:59 593 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:40:59 594 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:40:59 595 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 16:40:59 596 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/11 16:40:59 597 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 16:40:59 597 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 16:40:59 599 [debug]: SELECT deptno, dname, loc FROM department         ORDER BY deptno DESC     LIMIT 0, 10
+22/07/11 16:40:59 600 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 16:40:59 601 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 11ms
+22/07/11 16:40:59 602 [debug]: ------------------------------------------------------
+22/07/11 16:40:59 603 [debug]: 클라이언트가 접속했습니다.
+22/07/11 16:40:59 603 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 16:40:59 604 [debug]: [GET] http://localhost:3200/department
+22/07/11 16:40:59 605 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:40:59 606 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:40:59 606 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:40:59 607 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 16:40:59 608 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/11 16:40:59 609 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 16:40:59 609 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 16:40:59 610 [debug]: SELECT deptno, dname, loc FROM department         ORDER BY deptno DESC     LIMIT 0, 10
+22/07/11 16:40:59 611 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 16:40:59 612 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
+22/07/11 16:40:59 612 [debug]: ------------------------------------------------------
+22/07/11 16:41:21 072 [debug]: 클라이언트가 접속했습니다.
+22/07/11 16:41:21 073 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 16:41:21 074 [debug]: [GET] http://localhost:3200/department
+22/07/11 16:41:21 075 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:41:21 076 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:41:21 076 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:41:21 077 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 16:41:21 078 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/11 16:41:21 079 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 16:41:21 080 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 16:41:21 081 [debug]: SELECT deptno, dname, loc FROM department         ORDER BY deptno DESC     LIMIT 0, 10
+22/07/11 16:41:21 081 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 16:41:21 082 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
+22/07/11 16:41:21 083 [debug]: ------------------------------------------------------
+22/07/11 16:41:21 084 [debug]: 클라이언트가 접속했습니다.
+22/07/11 16:41:21 084 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 16:41:21 085 [debug]: [GET] http://localhost:3200/department
+22/07/11 16:41:21 086 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:41:21 086 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:41:21 086 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:41:21 087 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 16:41:21 088 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/11 16:41:21 089 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 16:41:21 089 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 16:41:21 090 [debug]: SELECT deptno, dname, loc FROM department         ORDER BY deptno DESC     LIMIT 0, 10
+22/07/11 16:41:21 090 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 16:41:21 091 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+22/07/11 16:41:21 091 [debug]: ------------------------------------------------------
+22/07/11 16:42:14 430 [debug]: 클라이언트가 접속했습니다.
+22/07/11 16:42:14 431 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 16:42:14 431 [debug]: [GET] http://localhost:3200/department
+22/07/11 16:42:14 432 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:42:14 433 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:42:14 433 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:42:14 433 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 16:42:14 434 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/11 16:42:14 435 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 16:42:14 436 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 16:42:14 436 [debug]: SELECT deptno, dname, loc FROM department         ORDER BY deptno DESC     LIMIT 0, 10
+22/07/11 16:42:14 437 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 16:42:14 438 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+22/07/11 16:42:14 438 [debug]: ------------------------------------------------------
+22/07/11 16:42:14 440 [debug]: 클라이언트가 접속했습니다.
+22/07/11 16:42:14 440 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 16:42:14 441 [debug]: [GET] http://localhost:3200/department
+22/07/11 16:42:14 442 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:42:14 442 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:42:14 442 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:42:14 443 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 16:42:14 443 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/11 16:42:14 444 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 16:42:14 445 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 16:42:14 445 [debug]: SELECT deptno, dname, loc FROM department         ORDER BY deptno DESC     LIMIT 0, 10
+22/07/11 16:42:14 446 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 16:42:14 447 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+22/07/11 16:42:14 447 [debug]: ------------------------------------------------------
+22/07/11 16:43:20 392 [debug]: 클라이언트가 접속했습니다.
+22/07/11 16:43:20 393 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 16:43:20 394 [debug]: [GET] http://localhost:3200/department
+22/07/11 16:43:20 396 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:43:20 397 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:43:20 397 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:43:20 397 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 16:43:20 398 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/11 16:43:20 399 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 16:43:20 399 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 16:43:20 400 [debug]: SELECT deptno, dname, loc FROM department         ORDER BY deptno DESC     LIMIT 0, 10
+22/07/11 16:43:20 401 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 16:43:20 401 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 8ms
+22/07/11 16:43:20 402 [debug]: ------------------------------------------------------
+22/07/11 16:43:20 403 [debug]: 클라이언트가 접속했습니다.
+22/07/11 16:43:20 403 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 16:43:20 404 [debug]: [GET] http://localhost:3200/department
+22/07/11 16:43:20 405 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:43:20 406 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:43:20 406 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:43:20 407 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 16:43:20 408 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/11 16:43:20 408 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 16:43:20 409 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 16:43:20 409 [debug]: SELECT deptno, dname, loc FROM department         ORDER BY deptno DESC     LIMIT 0, 10
+22/07/11 16:43:20 410 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 16:43:20 411 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 8ms
+22/07/11 16:43:20 412 [debug]: ------------------------------------------------------
+22/07/11 16:43:24 263 [debug]: 클라이언트가 접속했습니다.
+22/07/11 16:43:24 264 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 16:43:24 265 [debug]: [GET] http://localhost:3200/department
+22/07/11 16:43:24 267 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:43:24 267 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:43:24 268 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:43:24 268 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 16:43:24 269 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/11 16:43:24 271 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 16:43:24 271 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 16:43:24 273 [debug]: SELECT deptno, dname, loc FROM department         ORDER BY deptno DESC     LIMIT 0, 10
+22/07/11 16:43:24 275 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 16:43:24 276 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 12ms
+22/07/11 16:43:24 276 [debug]: ------------------------------------------------------
+22/07/11 16:43:24 277 [debug]: 클라이언트가 접속했습니다.
+22/07/11 16:43:24 277 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 16:43:24 277 [debug]: [GET] http://localhost:3200/department
+22/07/11 16:43:24 278 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:43:24 279 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:43:24 279 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:43:24 280 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 16:43:24 280 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/11 16:43:24 281 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 16:43:24 281 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 16:43:24 282 [debug]: SELECT deptno, dname, loc FROM department         ORDER BY deptno DESC     LIMIT 0, 10
+22/07/11 16:43:24 283 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 16:43:24 284 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+22/07/11 16:43:24 284 [debug]: ------------------------------------------------------
+22/07/11 16:46:28 403 [debug]: 클라이언트가 접속했습니다.
+22/07/11 16:46:28 403 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 16:46:28 404 [debug]: [GET] http://localhost:3200/department
+22/07/11 16:46:28 404 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:46:28 405 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:46:28 405 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:46:28 405 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 16:46:28 406 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/11 16:46:28 406 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 16:46:28 407 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 16:46:28 407 [debug]: SELECT deptno, dname, loc FROM department         ORDER BY deptno DESC     LIMIT 0, 10
+22/07/11 16:46:28 407 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 16:46:28 408 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+22/07/11 16:46:28 408 [debug]: ------------------------------------------------------
+22/07/11 16:46:35 710 [debug]: 클라이언트가 접속했습니다.
+22/07/11 16:46:35 710 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 16:46:35 711 [debug]: [GET] http://localhost:3200/department
+22/07/11 16:46:35 712 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:46:35 712 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:46:35 713 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:46:35 713 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 16:46:35 714 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/11 16:46:35 714 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 16:46:35 715 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 16:46:35 715 [debug]: SELECT deptno, dname, loc FROM department         ORDER BY deptno DESC     LIMIT 0, 10
+22/07/11 16:46:35 716 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 16:46:35 716 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+22/07/11 16:46:35 717 [debug]: ------------------------------------------------------
+22/07/11 16:49:37 095 [debug]: 클라이언트가 접속했습니다.
+22/07/11 16:49:37 095 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 16:49:37 096 [debug]: [GET] http://localhost:3200/department?rows=10
+22/07/11 16:49:37 097 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:49:37 097 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:49:37 098 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:49:37 098 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 16:49:37 099 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/11 16:49:37 099 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 16:49:37 100 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 16:49:37 100 [debug]: SELECT deptno, dname, loc FROM department         ORDER BY deptno DESC     LIMIT 0, 10
+22/07/11 16:49:37 101 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 16:49:37 102 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+22/07/11 16:49:37 102 [debug]: ------------------------------------------------------
+22/07/11 16:49:37 103 [debug]: 클라이언트가 접속했습니다.
+22/07/11 16:49:37 103 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 16:49:37 103 [debug]: [GET] http://localhost:3200/department?rows=10
+22/07/11 16:49:37 104 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:49:37 104 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:49:37 105 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:49:37 105 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 16:49:37 106 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/11 16:49:37 106 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 16:49:37 107 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 16:49:37 107 [debug]: SELECT deptno, dname, loc FROM department         ORDER BY deptno DESC     LIMIT 0, 10
+22/07/11 16:49:37 107 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 16:49:37 108 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+22/07/11 16:49:37 108 [debug]: ------------------------------------------------------
+22/07/11 16:49:39 736 [debug]: 클라이언트가 접속했습니다.
+22/07/11 16:49:39 736 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 16:49:39 737 [debug]: [GET] http://localhost:3200/department?rows=20
+22/07/11 16:49:39 738 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:49:39 739 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:49:39 739 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:49:39 739 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 16:49:39 740 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/11 16:49:39 741 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 16:49:39 741 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 16:49:39 741 [debug]: SELECT deptno, dname, loc FROM department         ORDER BY deptno DESC     LIMIT 0, 20
+22/07/11 16:49:39 742 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 16:49:39 743 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+22/07/11 16:49:39 743 [debug]: ------------------------------------------------------
+22/07/11 16:49:41 692 [debug]: 클라이언트가 접속했습니다.
+22/07/11 16:49:41 693 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 16:49:41 693 [debug]: [GET] http://localhost:3200/department?rows=30
+22/07/11 16:49:41 694 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:49:41 694 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:49:41 695 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:49:41 695 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 16:49:41 696 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/11 16:49:41 696 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 16:49:41 696 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 16:49:41 697 [debug]: SELECT deptno, dname, loc FROM department         ORDER BY deptno DESC     LIMIT 0, 30
+22/07/11 16:49:41 697 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 16:49:41 698 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+22/07/11 16:49:41 698 [debug]: ------------------------------------------------------
+22/07/11 16:49:44 245 [debug]: 클라이언트가 접속했습니다.
+22/07/11 16:49:44 246 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 16:49:44 246 [debug]: [GET] http://localhost:3200/department?rows=10
+22/07/11 16:49:44 247 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:49:44 247 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:49:44 247 [debug]: [HTTP %s Params] %s=%s
+22/07/11 16:49:44 248 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 16:49:44 248 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/11 16:49:44 249 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 16:49:44 249 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 16:49:44 249 [debug]: SELECT deptno, dname, loc FROM department         ORDER BY deptno DESC     LIMIT 0, 10
+22/07/11 16:49:44 250 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 16:49:44 250 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 4ms
+22/07/11 16:49:44 251 [debug]: ------------------------------------------------------
+22/07/11 17:41:00 498 [debug]: 클라이언트가 접속했습니다.
+22/07/11 17:41:00 498 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 17:41:00 499 [debug]: [GET] http://localhost:3200/department?rows=10
+22/07/11 17:41:00 500 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:41:00 500 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:41:00 500 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:41:00 500 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 17:41:00 501 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/11 17:41:00 502 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 17:41:00 503 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 17:41:00 503 [debug]: SELECT deptno, dname, loc FROM department         ORDER BY deptno DESC     LIMIT 0, 10
+22/07/11 17:41:00 504 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 17:41:00 504 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+22/07/11 17:41:00 505 [debug]: ------------------------------------------------------
+22/07/11 17:42:19 494 [debug]: 클라이언트가 접속했습니다.
+22/07/11 17:42:19 494 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 17:42:19 495 [debug]: [GET] http://localhost:3200/department?rows=10
+22/07/11 17:42:19 496 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:42:19 496 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:42:19 496 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:42:19 496 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 17:42:19 497 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/11 17:42:19 498 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 17:42:19 498 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 17:42:19 498 [debug]: SELECT deptno, dname, loc FROM department         ORDER BY deptno DESC     LIMIT 0, 10
+22/07/11 17:42:19 499 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 17:42:19 499 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+22/07/11 17:42:19 500 [debug]: ------------------------------------------------------
+22/07/11 17:42:19 500 [debug]: 클라이언트가 접속했습니다.
+22/07/11 17:42:19 500 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 17:42:19 501 [debug]: [GET] http://localhost:3200/department?rows=10
+22/07/11 17:42:19 502 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:42:19 502 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:42:19 502 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:42:19 503 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 17:42:19 503 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/11 17:42:19 504 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 17:42:19 504 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 17:42:19 504 [debug]: SELECT deptno, dname, loc FROM department         ORDER BY deptno DESC     LIMIT 0, 10
+22/07/11 17:42:19 505 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 17:42:19 505 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+22/07/11 17:42:19 506 [debug]: ------------------------------------------------------
+22/07/11 17:43:55 501 [debug]: 클라이언트가 접속했습니다.
+22/07/11 17:43:55 501 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 17:43:55 502 [debug]: [GET] http://localhost:3200/department?query=&page=1&rows=10
+22/07/11 17:43:55 503 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:43:55 503 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:43:55 503 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:43:55 504 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 17:43:55 504 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/11 17:43:55 505 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 17:43:55 505 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 17:43:55 505 [debug]: SELECT deptno, dname, loc FROM department         ORDER BY deptno DESC     LIMIT 0, 10
+22/07/11 17:43:55 506 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 17:43:55 507 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+22/07/11 17:43:55 507 [debug]: ------------------------------------------------------
+22/07/11 17:43:55 508 [debug]: 클라이언트가 접속했습니다.
+22/07/11 17:43:55 508 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 17:43:55 508 [debug]: [GET] http://localhost:3200/department?query=&page=1&rows=10
+22/07/11 17:43:55 509 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:43:55 509 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:43:55 510 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:43:55 510 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 17:43:55 511 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/11 17:43:55 511 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 17:43:55 512 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 17:43:55 512 [debug]: SELECT deptno, dname, loc FROM department         ORDER BY deptno DESC     LIMIT 0, 10
+22/07/11 17:43:55 513 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 17:43:55 513 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+22/07/11 17:43:55 513 [debug]: ------------------------------------------------------
+22/07/11 17:49:27 108 [debug]: 클라이언트가 접속했습니다.
+22/07/11 17:49:27 108 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 17:49:27 108 [debug]: [GET] http://localhost:3200/department?query=&page=1&rows=10
+22/07/11 17:49:27 109 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:49:27 110 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:49:27 110 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:49:27 110 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 17:49:27 111 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/11 17:49:27 112 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 17:49:27 112 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 17:49:27 112 [debug]: SELECT deptno, dname, loc FROM department         ORDER BY deptno DESC     LIMIT 0, 10
+22/07/11 17:49:27 113 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 17:49:27 113 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+22/07/11 17:49:27 114 [debug]: ------------------------------------------------------
+22/07/11 17:50:31 714 [debug]: 클라이언트가 접속했습니다.
+22/07/11 17:50:31 714 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 17:50:31 715 [debug]: [GET] http://localhost:3200/department?query=&page=1&rows=10
+22/07/11 17:50:31 716 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:50:31 716 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:50:31 716 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:50:31 716 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 17:50:31 717 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/11 17:50:31 717 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 17:50:31 718 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 17:50:31 718 [debug]: SELECT deptno, dname, loc FROM department         ORDER BY deptno DESC     LIMIT 0, 10
+22/07/11 17:50:31 719 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 17:50:31 720 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+22/07/11 17:50:31 720 [debug]: ------------------------------------------------------
+22/07/11 17:51:16 219 [debug]: 클라이언트가 접속했습니다.
+22/07/11 17:51:16 220 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 17:51:16 221 [debug]: [GET] http://localhost:3200/department?page=1&rows=10
+22/07/11 17:51:16 222 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:51:16 222 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:51:16 223 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:51:16 223 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 17:51:16 225 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/11 17:51:16 226 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 17:51:16 227 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 17:51:16 228 [debug]: SELECT deptno, dname, loc FROM department         ORDER BY deptno DESC     LIMIT 0, 10
+22/07/11 17:51:16 228 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 17:51:16 229 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
+22/07/11 17:51:16 229 [debug]: ------------------------------------------------------
+22/07/11 17:51:20 772 [debug]: 클라이언트가 접속했습니다.
+22/07/11 17:51:20 772 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 17:51:20 773 [debug]: [GET] http://localhost:3200/department?query=&page=1&rows=10
+22/07/11 17:51:20 774 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:51:20 775 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:51:20 775 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:51:20 775 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 17:51:20 776 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/11 17:51:20 777 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 17:51:20 778 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 17:51:20 778 [debug]: SELECT deptno, dname, loc FROM department         ORDER BY deptno DESC     LIMIT 0, 10
+22/07/11 17:51:20 779 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 17:51:20 780 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 8ms
+22/07/11 17:51:20 780 [debug]: ------------------------------------------------------
+22/07/11 17:51:20 781 [debug]: 클라이언트가 접속했습니다.
+22/07/11 17:51:20 781 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 17:51:20 782 [debug]: [GET] http://localhost:3200/department?query=&page=1&rows=10
+22/07/11 17:51:20 784 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:51:20 784 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:51:20 784 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:51:20 785 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 17:51:20 785 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/11 17:51:20 786 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 17:51:20 786 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 17:51:20 787 [debug]: SELECT deptno, dname, loc FROM department         ORDER BY deptno DESC     LIMIT 0, 10
+22/07/11 17:51:20 788 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 17:51:20 789 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 8ms
+22/07/11 17:51:20 789 [debug]: ------------------------------------------------------
+22/07/11 17:51:22 889 [debug]: 클라이언트가 접속했습니다.
+22/07/11 17:51:22 890 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 17:51:22 890 [debug]: [GET] http://localhost:3200/department?page=1&rows=10
+22/07/11 17:51:22 891 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:51:22 891 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:51:22 892 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:51:22 892 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 17:51:22 893 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/11 17:51:22 893 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 17:51:22 893 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 17:51:22 894 [debug]: SELECT deptno, dname, loc FROM department         ORDER BY deptno DESC     LIMIT 0, 10
+22/07/11 17:51:22 894 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 17:51:22 895 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+22/07/11 17:51:22 895 [debug]: ------------------------------------------------------
+22/07/11 17:51:45 813 [debug]: 클라이언트가 접속했습니다.
+22/07/11 17:51:45 813 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 17:51:45 814 [debug]: [GET] http://localhost:3200/department?query=&page=1&rows=10
+22/07/11 17:51:45 815 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:51:45 815 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:51:45 815 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:51:45 816 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 17:51:45 816 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/11 17:51:45 817 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 17:51:45 817 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 17:51:45 818 [debug]: SELECT deptno, dname, loc FROM department         ORDER BY deptno DESC     LIMIT 0, 10
+22/07/11 17:51:45 819 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 17:51:45 820 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+22/07/11 17:51:45 820 [debug]: ------------------------------------------------------
+22/07/11 17:51:45 820 [debug]: 클라이언트가 접속했습니다.
+22/07/11 17:51:45 821 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 17:51:45 821 [debug]: [GET] http://localhost:3200/department?query=&page=1&rows=10
+22/07/11 17:51:45 824 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:51:45 824 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:51:45 825 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:51:45 825 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 17:51:45 826 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/11 17:51:45 826 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 17:51:45 827 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 17:51:45 827 [debug]: SELECT deptno, dname, loc FROM department         ORDER BY deptno DESC     LIMIT 0, 10
+22/07/11 17:51:45 828 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 17:51:45 828 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+22/07/11 17:51:45 829 [debug]: ------------------------------------------------------
+22/07/11 17:51:47 385 [debug]: 클라이언트가 접속했습니다.
+22/07/11 17:51:47 386 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 17:51:47 386 [debug]: [GET] http://localhost:3200/department?query=&page=1&rows=20
+22/07/11 17:51:47 387 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:51:47 387 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:51:47 388 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:51:47 388 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 17:51:47 388 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/11 17:51:47 389 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 17:51:47 389 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 17:51:47 390 [debug]: SELECT deptno, dname, loc FROM department         ORDER BY deptno DESC     LIMIT 0, 20
+22/07/11 17:51:47 390 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 17:51:47 393 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 7ms
+22/07/11 17:51:47 393 [debug]: ------------------------------------------------------
+22/07/11 17:51:50 037 [debug]: 클라이언트가 접속했습니다.
+22/07/11 17:51:50 038 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 17:51:50 038 [debug]: [GET] http://localhost:3200/department?query=&page=1&rows=10
+22/07/11 17:51:50 039 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:51:50 039 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:51:50 039 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:51:50 040 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 17:51:50 040 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/11 17:51:50 041 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 17:51:50 041 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 17:51:50 041 [debug]: SELECT deptno, dname, loc FROM department         ORDER BY deptno DESC     LIMIT 0, 10
+22/07/11 17:51:50 042 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 17:51:50 042 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+22/07/11 17:51:50 042 [debug]: ------------------------------------------------------
+22/07/11 17:52:06 746 [debug]: 클라이언트가 접속했습니다.
+22/07/11 17:52:06 746 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 17:52:06 747 [debug]: [GET] http://localhost:3200/department?query=&page=1&rows=10
+22/07/11 17:52:06 749 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:52:06 749 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:52:06 749 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:52:06 750 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 17:52:06 750 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/11 17:52:06 751 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 17:52:06 751 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 17:52:06 751 [debug]: SELECT deptno, dname, loc FROM department         ORDER BY deptno DESC     LIMIT 0, 10
+22/07/11 17:52:06 752 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 17:52:06 752 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+22/07/11 17:52:06 752 [debug]: ------------------------------------------------------
+22/07/11 17:52:14 662 [debug]: 클라이언트가 접속했습니다.
+22/07/11 17:52:14 663 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 17:52:14 663 [debug]: [GET] http://localhost:3200/department?query=&page=1&rows=10
+22/07/11 17:52:14 664 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:52:14 664 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:52:14 665 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:52:14 665 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 17:52:14 666 [debug]: SELECT COUNT(*) AS cnt FROM department
+22/07/11 17:52:14 666 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 17:52:14 667 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 17:52:14 667 [debug]: SELECT deptno, dname, loc FROM department         ORDER BY deptno DESC     LIMIT 0, 10
+22/07/11 17:52:14 668 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 17:52:14 669 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+22/07/11 17:52:14 669 [debug]: ------------------------------------------------------
+22/07/11 17:52:18 168 [debug]: 클라이언트가 접속했습니다.
+22/07/11 17:52:18 169 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 17:52:18 169 [debug]: [GET] http://localhost:3200/department?query=아이유&page=1&rows=10
+22/07/11 17:52:18 170 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:52:18 170 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:52:18 171 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:52:18 171 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 17:52:18 171 [debug]: SELECT COUNT(*) AS cnt FROM department   WHERE     dname LIKE concat('%', '아이유', '%')    OR loc LIKE concat('%', '아이유', '%')
+22/07/11 17:52:18 172 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 17:52:18 172 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 17:52:18 173 [debug]: SELECT deptno, dname, loc FROM department    WHERE     dname LIKE concat('%', '아이유', '%')    OR loc LIKE concat('%', '아이유', '%')     ORDER BY deptno DESC     LIMIT 0, 10
+22/07/11 17:52:18 173 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 17:52:18 173 [error]: [Error] 조회된 데이터가 없습니다.
+22/07/11 17:52:18 174 [error]: Error: 조회된 데이터가 없습니다.
+    at DepartmentService.getList (file:///C:/Users/Sin_jisup/studynote/07-NodeJS/14-RestfulAPI/services/DepartmentService.js:29:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async file:///C:/Users/Sin_jisup/studynote/07-NodeJS/14-RestfulAPI/controllers/DepartmentController.js:38:14
+22/07/11 17:52:18 174 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 5ms
+22/07/11 17:52:18 175 [debug]: ------------------------------------------------------
+22/07/11 17:52:26 276 [debug]: 클라이언트가 접속했습니다.
+22/07/11 17:52:26 277 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 17:52:26 277 [debug]: [GET] http://localhost:3200/department?query=놀기&page=1&rows=10
+22/07/11 17:52:26 279 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:52:26 279 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:52:26 279 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:52:26 280 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 17:52:26 281 [debug]: SELECT COUNT(*) AS cnt FROM department   WHERE     dname LIKE concat('%', '놀기', '%')    OR loc LIKE concat('%', '놀기', '%')
+22/07/11 17:52:26 281 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 17:52:26 281 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 17:52:26 282 [debug]: SELECT deptno, dname, loc FROM department    WHERE     dname LIKE concat('%', '놀기', '%')    OR loc LIKE concat('%', '놀기', '%')     ORDER BY deptno DESC     LIMIT 0, 10
+22/07/11 17:52:26 282 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 17:52:26 283 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 6ms
+22/07/11 17:52:26 283 [debug]: ------------------------------------------------------
+22/07/11 17:53:13 180 [debug]: 클라이언트가 접속했습니다.
+22/07/11 17:53:13 181 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 17:53:13 185 [debug]: [GET] http://localhost:3200/department?query=놀기&page=1&rows=20
+22/07/11 17:53:13 186 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:53:13 186 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:53:13 186 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:53:13 187 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 17:53:13 187 [debug]: SELECT COUNT(*) AS cnt FROM department   WHERE     dname LIKE concat('%', '놀기', '%')    OR loc LIKE concat('%', '놀기', '%')
+22/07/11 17:53:13 188 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 17:53:13 189 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 17:53:13 190 [debug]: SELECT deptno, dname, loc FROM department    WHERE     dname LIKE concat('%', '놀기', '%')    OR loc LIKE concat('%', '놀기', '%')     ORDER BY deptno DESC     LIMIT 0, 20
+22/07/11 17:53:13 191 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 17:53:13 191 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 10ms
+22/07/11 17:53:13 192 [debug]: ------------------------------------------------------
+22/07/11 17:53:15 376 [debug]: 클라이언트가 접속했습니다.
+22/07/11 17:53:15 376 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 17:53:15 377 [debug]: [GET] http://localhost:3200/department?query=놀기&page=1&rows=30
+22/07/11 17:53:15 378 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:53:15 378 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:53:15 379 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:53:15 379 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 17:53:15 380 [debug]: SELECT COUNT(*) AS cnt FROM department   WHERE     dname LIKE concat('%', '놀기', '%')    OR loc LIKE concat('%', '놀기', '%')
+22/07/11 17:53:15 381 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 17:53:15 381 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 17:53:15 382 [debug]: SELECT deptno, dname, loc FROM department    WHERE     dname LIKE concat('%', '놀기', '%')    OR loc LIKE concat('%', '놀기', '%')     ORDER BY deptno DESC     LIMIT 0, 30
+22/07/11 17:53:15 383 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 17:53:15 384 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 8ms
+22/07/11 17:53:15 384 [debug]: ------------------------------------------------------
+22/07/11 17:53:16 776 [debug]: 클라이언트가 접속했습니다.
+22/07/11 17:53:16 777 [debug]: [client] ::1 / Windows 10.0 / Chrome / (103.0.0.0) / Microsoft Windows
+22/07/11 17:53:16 778 [debug]: [GET] http://localhost:3200/department?query=놀기&page=1&rows=10
+22/07/11 17:53:16 779 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:53:16 779 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:53:16 780 [debug]: [HTTP %s Params] %s=%s
+22/07/11 17:53:16 781 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 17:53:16 782 [debug]: SELECT COUNT(*) AS cnt FROM department   WHERE     dname LIKE concat('%', '놀기', '%')    OR loc LIKE concat('%', '놀기', '%')
+22/07/11 17:53:16 784 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 17:53:16 784 [info]:  >> Connection 임대됨 [threadId=197]
+22/07/11 17:53:16 785 [debug]: SELECT deptno, dname, loc FROM department    WHERE     dname LIKE concat('%', '놀기', '%')    OR loc LIKE concat('%', '놀기', '%')     ORDER BY deptno DESC     LIMIT 0, 10
+22/07/11 17:53:16 785 [info]:  >> Connection 반납됨 [threadId=197]
+22/07/11 17:53:16 786 [debug]: 클라이언트의 접속이 종료되었습니다. ::: [runtime] 9ms
+22/07/11 17:53:16 786 [debug]: ------------------------------------------------------
+22/07/11 17:53:25 806 [debug]: -------------------------------------
+22/07/11 17:53:25 808 [debug]: |       Start Express Server        |
+22/07/11 17:53:25 809 [debug]: -------------------------------------
+22/07/11 17:53:25 809 [debug]: server address => http://192.168.35.6:3200
+22/07/11 17:53:25 809 [debug]: -------------------------------------

@@ -1,0 +1,7 @@
+22/07/07 22:36:49 050 [info]:  >> DATABASE 접속됨 [threadId=137]
+22/07/07 22:36:49 052 [info]:  >> Connection 임대됨 [threadId=137]
+22/07/07 22:36:49 053 [debug]: SELECT * FROM student
+22/07/07 22:37:02 478 [info]:  >> DATABASE 접속됨 [threadId=138]
+22/07/07 22:37:02 480 [info]:  >> Connection 임대됨 [threadId=138]
+22/07/07 22:37:02 482 [debug]: SELECT * FROM student
+22/07/07 22:37:02 495 [info]:  >> Connection 반납됨 [threadId=138]

@@ -10,4 +10,4 @@ class HelloWorld {
 }
 
 //클래스에 대한 객체를 모듈로 추가
-export default HelloWorld;
+export default new HelloWorld();
