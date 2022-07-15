@@ -3,9 +3,48 @@
 
 <mapper namespace="ProfessorMapper">
 
-  <!-- 특정 학과에 속한 교수 일괄 삭제-->
-  <delete id="deleteItemByDeptno">
-    DELETE FROM professor WHERE deptno=#{deptno};
+  <select id="selectItem">
+   SELECT
+    profno, name, userid, position, sal, date_format(hiredate, '%Y-%m-%d') as hiredate, comm, d.deptno, d.dname
+  FROM department as d
+  INNER JOIN professor as p
+  ON p.deptno = d.deptno
+  WHERE profno=#{profno};
+  </select>
+
+  <select id="selectList">
+    SELECT 
+      profno, name, userid, position, sal, date_format(hiredate, '%Y-%m-%d') as hiredate, comm, p.deptno, d.dname 
+    FROM professor as p
+    INNER JOIN department as d
+    ON p.deptno = d.deptno
+
+    ORDER BY profno DESC
+
+    <if test="listCount > 0">
+      LIMIT ${offset}, ${listCount}
+    </if>
+  </select>
+
+  <!--데이터 생성을 위한 기능 정의-->
+  <insert id="insertItem">
+    INSERT INTO professor (name, userid, position, sal, hiredate, comm, deptno) VALUES (#{name}, #{userid}, #{position}, #{sal}, #{hiredate}, #{comm}, #{deptno})
+  </insert>
+  
+  <!-- 데이터 갱신-->
+  <update id="updateItem">
+    UPDATE
+      professor SET name=#{name}, userid=#{userid}, sal=#{sal}, hiredate=#{hiredate}, comm=#{comm}, deptno=#{deptno}
+    WHERE profno=#{profno};
+  </update>
+
+  <!-- 데이터 삭제-->
+  <delete id="deleteItem">
+    DELETE FROM professor WHERE profno=#{profno};
   </delete>
+
+  <select id="selectCountAll">
+    SELECT COUNT(*) AS cnt FROM department
+  </select>
 
 </mapper>
